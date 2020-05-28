@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SAE NIT Kurukshetra</title>	
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="SAE_Home_Page.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+	<script>
+		var prevScrollpos = window.pageYOffset;
+		window.onscroll = function() {
+		var currentScrollPos = window.pageYOffset;
+		  if (prevScrollpos > currentScrollPos) {
+			document.querySelector(".navbar").style.top = "0";
+		  } else {
+			document.querySelector(".navbar").style.top = "-50px";
+		  }
+		  prevScrollpos = currentScrollPos;
+		}
+		</script>
+		
+</head>
+<style>
+
+</style>
+<body>
+<div class="bg_supporter">
+</div>
+<div class="premain">
+<div class="main">
+	
+	<nav class="navbar navbar-expand-md navbar-trans navbar-dark fixed-top">
+		<a class="navbar-brand" href="#">SAE NITKKR</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon" style="color:white;"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarNavDropdown">
+		<ul class="navbar-nav ml-auto">
+			<li class="nav-item active">
+			<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+			</li>
+			<li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				Teams
+				</a>
+				<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+				<a class="dropdown-item" href="#">Accelerons</a>
+				<a class="dropdown-item" href="#">Nitrox</a>
+				</div>
+			</li>
+			<li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuEvents" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					Events
+				</a>
+				<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuEvents">
+				<a class="dropdown-item" href="#">Autokriti</a>
+				</div>
+			</li>
+			<li class="nav-item">
+			<a class="nav-link" href="#">Discuss</a>
+			</li>
+			<li class="nav-item">
+			<a class="nav-link" href="#">Pricing</a>
+			</li>
+		</ul>
+		</div>
+	</nav>
+	
+	<div class="label">
+	<span style="font-size: 40px; padding-left: 50%;">SAE</span> <br>
+	<hr size="2" width="50%" color="#fff">
+	<span style="font-size: 35px; padding-left: 17%">NIT Kurukshetra</span>
+	</div>
+
+	<div class="motos">
+		<span style="opacity: 0.7; float: left; margin-left: 5%; margin-top: 2%; width: 10%; height:20%;"> <img src="design.png" height="100%" width="100%"> </span>
+		<span style="float: right; margin-right: 60%; margin-top: 1%; font-size: 30px; color: #fff;"> Design </span>	
+		
+		<span style="float: left; margin-top: 8%; font-size: 30px; color: #fff; "> Build </span>
+		<span style="float: right; margin-top: 7%; margin-right: 50%; width: 10%; height: 20%; "> <img src="build.png" height="100%" width="100%"> </span>	
+		
+		<span style="opacity: 0.7; float: left; margin-left: 5%; margin-top: 10%; width: 10%; height:20%;"> <img src="race.png" height="100%" width="100%"> </span>
+		<span style="float: right; margin-right: 65% ; margin-top: 8%; font-size: 30px; color: #fff;"> Race</span>	
+		<br><br><br><br><br><br><br><br><br><br><br>
+	</div>
+
+	<div class="social-media">
+		<span style="width: 40%; height: 20%; margin-left: 15%;"><img src="facebook.png" height="40%" width="20%"></span>
+		<span style="width: 40%; margin-left: 2%;"><img src="insta.png" height="40%" width="25%"></span>
+		<span style="width: 40%; margin-left: 2%;"><img src="youtube.png" height="40%" width="20%"></span>
+	</div>
+</div>			<!--Main--> 
+</div>			<!--PreMain-->
+	</body>
+</html>

@@ -1,0 +1,82 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+.bg_supporter{
+	height:100%;
+	width:100%;
+	background-image: url("./backgrounddraft.jpg");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	background-attachment: fixed;
+	position:fixed;
+	z-index: -2;
+}
+
+.premain{
+	z-index: 3;
+	background-color: rgba(0, 0, 0, 0.6);
+	overflow-y: scroll;
+	display: ; 	/*Delete for GIT*/
+}
+
+.logo{
+	float: left;
+	background: url("saelogo.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 15%; 
+	width: 10%;
+	opacity: 1;
+}
+
+.label{
+	margin-top: 20%;
+	margin-left: 25%;
+	height: 20%;
+	width: 30%;
+	color: #fff;
+	background-color:;
+	display: inline-block;
+	line-height: 200%;
+
+}
+
+.label hr{
+	margin-left: 55%;
+	transform: rotate(115deg);
+}
+.nav-item{
+	padding: 10px;
+}
+.nav-link{
+	color:white!important;
+	font-size: 20px;
+}
+.navbar-brand{
+	color:white;
+	font-weight: bold;
+	font-size: 25px;
+}
+.navbar-trans{
+	background:transparent;
+}
+.motos{
+	float: right;
+	width:30%;
+	height: auto;
+	margin-top: 16%;
+	margin-right: 15%;
+	background-color:;
+	display: inline-block;
+}
+
+.social-media{
+	float: left;
+	background-color:;
+	width: 10%;
+	height: auto;
+	margin-top: 20%;
+}
