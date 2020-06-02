@@ -9,7 +9,7 @@
 .cardsholder{
 	width: 100%;
 	height: 1000px;
-	background: #000;
+	background: #fff;
 	position: ;
 }
 
@@ -36,31 +36,36 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background-visibility: hidden;
+	background-visibility: hidden;         /*delete*/
 	transition: 1.5s ease-in-out;
-	transform: perspective(500px) rotateY(0deg);
-}
-
-.cardhonda .face.front{
-	background: #ff0;
+	transform: perspective(500px) rotateY(0deg);		/*delete*/
 }
 
 .cardhonda:hover .face.front{
 	transform: perspective(500px) rotateY(180deg);
 }
 
-.cardhonda .face.back{
+.cardhonda .front, .carhonda .back{
+
+}
+
+.cardhonda .front{
 	background: url("Logo_Honda.jpg");
-	background-size: contain;
+	background-size: cover;						/*Changed*/
 	background-repeat: no-repeat;
 	background-position: center;
+	transform: perspective(500px) rotateY(0deg);
+}
+
+.carhonda .back{
 	color: #fff;
-	transform: perspective(500px) rotateY(180deg);
+	background-color: rgba(255,255,255,0,2);
+	transform: perspective(500px) rotateY(0deg);
+	text-align: center;
 }
 
 .cardhonda:hover .face.back{
 	transform: perspective(500px) rotateY(360deg);
-	background-color: #fff;
 }
 
 .cardhonda .face h2{
