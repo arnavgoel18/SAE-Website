@@ -1,0 +1,896 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+*{
+	margin:0;
+	padding:0;
+	font-family: 'Poppins' ,sanss-serif;
+}
+
+.cardsholder{
+	width: 100%;
+	height: 1000px;
+	background: #000;
+	position: absolute;
+}
+
+/*HONDA--------------------------------------------------------------------------------*/
+
+.cardhonda{							
+	position: relative;
+	width: 15%;
+	height: 15%;
+	transform-style: preserve-3d;	
+	margin-left: 7%;
+	margin-top: 5%;
+	display: inline-block;
+}
+
+.cardhonda .face					
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	transform-style: preserve-3d;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-visibility: hidden;
+	transition: 1.5s ease-in-out;
+	transform: perspective(500px) rotateY(0deg);
+}
+
+.cardhonda .face.front{
+	background: #ff0;
+}
+
+.cardhonda:hover .face.front{
+	transform: perspective(500px) rotateY(180deg);
+}
+
+.cardhonda .face.back{
+	background: url("Logo_Honda.jpg");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	color: #fff;
+	transform: perspective(500px) rotateY(180deg);
+}
+
+.cardhonda:hover .face.back{
+	transform: perspective(500px) rotateY(360deg);
+	background-color: #fff;
+}
+
+.cardhonda .face h2{
+	text-transform: uppercase;
+	transform: perspective(500px) translateZ(50px);
+}
+
+
+/*Ricardo------------------------------------------------------------------------------*/
+
+.cardricardo{
+	position: relative;
+	width: 15%;
+	height: 15%;
+	transform-style: preserve-3d;	
+	margin-left: 7%;
+	margin-top: 5%;
+	display: inline-block;
+}
+
+.cardricardo .face					
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	transform-style: preserve-3d;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-visibility: hidden;
+	transition: 1.5s ease-in-out;
+	transform: perspective(500px) rotateY(0deg);
+}
+
+.cardricardo .face.front{
+	background: #3bc2ff;			/*3b4f*/
+}
+
+.cardricardo:hover .face.front{
+	transform: perspective(500px) rotateY(180deg);
+}
+
+.cardricardo .face.back{
+	background: url("Logo_Ricardo.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	color: #fff;
+	transform: perspective(500px) rotateY(180deg);
+}
+
+.cardricardo:hover .face.back{
+	transform: perspective(500px) rotateY(360deg);
+	background-color: #fff;
+}
+
+.cardricardo .face h2{
+	text-transform: uppercase;
+	transform: perspective(500px) translateZ(50px);
+}
+
+
+/*Scolarian------------------------------------------------------------------------------*/
+
+.cardscolarian{
+	position: relative;
+	width: 15%;
+	height: 15%;
+	transform-style: preserve-3d;	
+	margin-left: 7%;
+	margin-top: 5%;
+	display: inline-block;
+}
+
+.cardscolarian .face					
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	transform-style: preserve-3d;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-visibility: hidden;
+	transition: 1.5s ease-in-out;
+	transform: perspective(500px) rotateY(0deg);
+}
+
+.cardscolarian .face.front{
+	background: #ff0;			/*3b4f*/
+}
+
+.cardscolarian:hover .face.front{
+	transform: perspective(500px) rotateY(180deg);
+}
+
+.cardscolarian .face.back{
+	background: url("Logo_Scolarian.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	color: #fff;
+	transform: perspective(500px) rotateY(180deg);
+}
+
+.cardscolarian:hover .face.back{
+	transform: perspective(500px) rotateY(360deg);
+	background-color: #fff;
+}
+
+.cardscolarian .face h2{
+	text-transform: uppercase;
+	transform: perspective(500px) translateZ(50px);
+}
+
+/*Altair------------------------------------------------------------------------------*/
+
+.cardaltair{
+	position: relative;
+	width: 15%;
+	height: 15%;
+	transform-style: preserve-3d;	
+	margin-left: 7%;
+	margin-top: 5%;
+	display: inline-block;
+}
+
+.cardaltair .face					
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	transform-style: preserve-3d;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-visibility: hidden;
+	transition: 1.5s ease-in-out;
+	transform: perspective(500px) rotateY(0deg);
+}
+
+.cardaltair .face.front{
+	background: #3bc2ff;			/*3b4f*/
+}
+
+.cardaltair:hover .face.front{
+	transform: perspective(500px) rotateY(180deg);
+}
+
+.cardaltair .face.back{
+	background: url("Logo_Altair.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	color: #fff;
+	transform: perspective(500px) rotateY(180deg);
+}
+
+.cardaltair:hover .face.back{
+	transform: perspective(500px) rotateY(360deg);
+	background-color: #fff;
+}
+
+.cardaltair .face h2{
+	text-transform: uppercase;
+	transform: perspective(500px) translateZ(50px);
+}
+
+/*CMSR----------------------------------------------------------------------------------*/
+
+.cardcmsr{
+	position: relative;
+	width: 15%;
+	height: 15%;
+	transform-style: preserve-3d;	
+	margin-left: 7%;
+	margin-top: 5%;
+	display: inline-block;
+}
+
+.cardcmsr .face					
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	transform-style: preserve-3d;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-visibility: hidden;
+	transition: 1.5s ease-in-out;
+	transform: perspective(500px) rotateY(0deg);
+}
+
+.cardcmsr .face.front{
+	background: #3bc2ff;			/*3b4f*/
+}
+
+.cardcmsr:hover .face.front{
+	transform: perspective(500px) rotateY(180deg);
+}
+
+.cardcmsr .face.back{
+	background: url("Logo_CMSR.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	color: #fff;
+	transform: perspective(500px) rotateY(180deg);
+}
+
+.cardcmsr:hover .face.back{
+	transform: perspective(500px) rotateY(360deg);
+	background-color: #fff;
+}
+
+.cardcmsr .face h2{
+	text-transform: uppercase;
+	transform: perspective(500px) translateZ(50px);
+}
+
+/*Endico------------------------------------------------------------------------------*/
+
+.cardendico{
+	position: relative;
+	width: 15%;
+	height: 15%;
+	transform-style: preserve-3d;	
+	margin-left: 7%;
+	margin-top: 5%;
+	display: inline-block;
+}
+
+.cardendico .face					
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	transform-style: preserve-3d;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-visibility: hidden;
+	transition: 1.5s ease-in-out;
+	transform: perspective(500px) rotateY(0deg);
+}
+
+.cardendico .face.front{
+	background: #ff0;			/*3b4f*/
+}
+
+.cardendico:hover .face.front{
+	transform: perspective(500px) rotateY(180deg);
+}
+
+.cardendico .face.back{
+	background: url("Logo_Endico.jpg");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	color: #fff;
+	transform: perspective(500px) rotateY(180deg);
+}
+
+.cardendico:hover .face.back{
+	transform: perspective(500px) rotateY(360deg);
+	background-color: #fff;
+}
+
+.cardendico .face h2{
+	text-transform: uppercase;
+	transform: perspective(500px) translateZ(50px);
+}
+
+/*HERO----------------------------------------------------------------------------------*/
+
+.cardhero{
+	position: relative;
+	width: 15%;
+	height: 15%;
+	transform-style: preserve-3d;	
+	margin-left: 7%;
+	margin-top: 5%;
+	display: inline-block;
+}
+
+.cardhero .face					
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	transform-style: preserve-3d;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-visibility: hidden;
+	transition: 1.5s ease-in-out;
+	transform: perspective(500px) rotateY(0deg);
+}
+
+.cardhero .face.front{
+	background: #3bc2ff;			/*3b4f*/
+}
+
+.cardhero:hover .face.front{
+	transform: perspective(500px) rotateY(180deg);
+}
+
+.cardhero .face.back{
+	background: url("Logo_Hero.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	color: #fff;
+	transform: perspective(500px) rotateY(180deg);
+}
+
+.cardhero:hover .face.back{
+	transform: perspective(500px) rotateY(360deg);
+	background-color: #fff;
+}
+
+.cardhero .face h2{
+	text-transform: uppercase;
+	transform: perspective(500px) translateZ(50px);
+}
+
+/*Instapro------------------------------------------------------------------------------*/
+
+.cardinstapro{
+	position: relative;
+	width: 15%;
+	height: 15%;
+	transform-style: preserve-3d;	
+	margin-left: 7%;
+	margin-top: 5%;
+	display: inline-block;
+}
+
+.cardinstapro .face					
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	transform-style: preserve-3d;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-visibility: hidden;
+	transition: 1.5s ease-in-out;
+	transform: perspective(500px) rotateY(0deg);
+}
+
+.cardinstapro .face.front{
+	background: #ff0;			/*3b4f*/
+}
+
+.cardinstapro:hover .face.front{
+	transform: perspective(500px) rotateY(180deg);
+}
+
+.cardinstapro .face.back{
+	background: url("Logo_Instapro.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	color: #fff;
+	transform: perspective(500px) rotateY(180deg);
+}
+
+.cardinstapro:hover .face.back{
+	transform: perspective(500px) rotateY(360deg);
+	background-color: #fff;
+}
+
+.cardinstapro .face h2{
+	text-transform: uppercase;
+	transform: perspective(500px) translateZ(50px);
+}
+
+/*Instapro------------------------------------------------------------------------------*/
+
+.cardinstapro{
+	position: relative;
+	width: 15%;
+	height: 15%;
+	transform-style: preserve-3d;	
+	margin-left: 7%;
+	margin-top: 5%;
+	display: inline-block;
+}
+
+.cardinstapro .face					
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	transform-style: preserve-3d;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-visibility: hidden;
+	transition: 1.5s ease-in-out;
+	transform: perspective(500px) rotateY(0deg);
+}
+
+.cardinstapro .face.front{
+	background: #ff0;			/*3b4f*/
+}
+
+.cardinstapro:hover .face.front{
+	transform: perspective(500px) rotateY(180deg);
+}
+
+.cardinstapro .face.back{
+	background: url("Logo_Instapro.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	color: #fff;
+	transform: perspective(500px) rotateY(180deg);
+}
+
+.cardinstapro:hover .face.back{
+	transform: perspective(500px) rotateY(360deg);
+	background-color: #fff;
+}
+
+.cardinstapro .face h2{
+	text-transform: uppercase;
+	transform: perspective(500px) translateZ(50px);
+}
+
+/*Janatics------------------------------------------------------------------------------*/
+
+.cardjanatics{
+	position: relative;
+	width: 15%;
+	height: 15%;
+	transform-style: preserve-3d;	
+	margin-left: 7%;
+	margin-top: 5%;
+	display: inline-block;
+}
+
+.cardjanatics .face					
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	transform-style: preserve-3d;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-visibility: hidden;
+	transition: 1.5s ease-in-out;
+	transform: perspective(500px) rotateY(0deg);
+}
+
+.cardjanatics .face.front{
+	background: #ff0;			/*3b4f*/
+}
+
+.cardjanatics:hover .face.front{
+	transform: perspective(500px) rotateY(180deg);
+}
+
+.cardjanatics .face.back{
+	background: url("Logo_Instapro.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	color: #fff;
+	transform: perspective(500px) rotateY(180deg);
+}
+
+.cardjanatics:hover .face.back{
+	transform: perspective(500px) rotateY(360deg);
+	background-color: #fff;
+}
+
+.cardjanatics .face h2{
+	text-transform: uppercase;
+	transform: perspective(500px) translateZ(50px);
+}
+
+/*KISSSOFT------------------------------------------------------------------------------*/
+
+.cardkisssoft{
+	position: relative;
+	width: 15%;
+	height: 15%;
+	transform-style: preserve-3d;	
+	margin-left: 7%;
+	margin-top: 5%;
+	display: inline-block;
+}
+
+.cardkisssoft .face					
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	transform-style: preserve-3d;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-visibility: hidden;
+	transition: 1.5s ease-in-out;
+	transform: perspective(500px) rotateY(0deg);
+}
+
+.cardkisssoft .face.front{
+	background: #3bc2ff;			/*3b4f*/
+}
+
+.cardkisssoft:hover .face.front{
+	transform: perspective(500px) rotateY(180deg);
+}
+
+.cardkisssoft .face.back{
+	background: url("Logo_KissSoft.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	color: #fff;
+	transform: perspective(500px) rotateY(180deg);
+}
+
+.cardkisssoft:hover .face.back{
+	transform: perspective(500px) rotateY(360deg);
+	background-color: #fff;
+}
+
+.cardkisssoft .face h2{
+	text-transform: uppercase;
+	transform: perspective(500px) translateZ(50px);
+}
+
+/*LPS------------------------------------------------------------------------------*/
+
+.cardlps{
+	position: relative;
+	width: 15%;
+	height: 15%;
+	transform-style: preserve-3d;	
+	margin-left: 7%;
+	margin-top: 5%;
+	display: inline-block;
+}
+
+.cardlps .face					
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	transform-style: preserve-3d;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-visibility: hidden;
+	transition: 1.5s ease-in-out;
+	transform: perspective(500px) rotateY(0deg);
+}
+
+.cardlps .face.front{
+	background: #ff0;			/*3b4f*/
+}
+
+.cardlps:hover .face.front{
+	transform: perspective(500px) rotateY(180deg);
+}
+
+.cardlps .face.back{
+	background: url("Logo_LPS.jpg");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	color: #fff;
+	transform: perspective(500px) rotateY(180deg);
+}
+
+.cardlps:hover .face.back{
+	transform: perspective(500px) rotateY(360deg);
+	background-color: #fff;
+}
+
+.cardlps .face h2{
+	text-transform: uppercase;
+	transform: perspective(500px) translateZ(50px);
+}
+
+/*MADEEASY------------------------------------------------------------------------------*/
+
+.cardmadeeasy{
+	position: relative;
+	width: 15%;
+	height: 15%;
+	transform-style: preserve-3d;	
+	margin-left: 7%;
+	margin-top: 5%;
+	display: inline-block;
+}
+
+.cardmadeeasy .face					
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	transform-style: preserve-3d;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-visibility: hidden;
+	transition: 1.5s ease-in-out;
+	transform: perspective(500px) rotateY(0deg);
+}
+
+.cardmadeeasy .face.front{
+	background: #ff0;			/*3b4f*/
+}
+
+.cardmadeeasy:hover .face.front{
+	transform: perspective(500px) rotateY(180deg);
+}
+
+.cardmadeeasy .face.back{
+	background: url("Logo_Madeeasy.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	color: #fff;
+	transform: perspective(500px) rotateY(180deg);
+}
+
+.cardmadeeasy:hover .face.back{
+	transform: perspective(500px) rotateY(360deg);
+	background-color: #fff;
+}
+
+.cardmadeeasy .face h2{
+	text-transform: uppercase;
+	transform: perspective(500px) translateZ(50px);
+}
+
+/*TP------------------------------------------------------------------------------*/
+
+.cardtp{
+	position: relative;
+	width: 15%;
+	height: 15%;
+	transform-style: preserve-3d;	
+	margin-left: 7%;
+	margin-top: 5%;
+	display: inline-block;
+}
+
+.cardtp .face					
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	transform-style: preserve-3d;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-visibility: hidden;
+	transition: 1.5s ease-in-out;
+	transform: perspective(500px) rotateY(0deg);
+}
+
+.cardtp .face.front{
+	background: #3bc2ff;			/*3b4f*/
+}
+
+.cardtp:hover .face.front{
+	transform: perspective(500px) rotateY(180deg);
+}
+
+.cardtp .face.back{
+	background: url("Logo_Tp.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	color: #fff;
+	transform: perspective(500px) rotateY(180deg);
+}
+
+.cardtp:hover .face.back{
+	transform: perspective(500px) rotateY(360deg);
+	background-color: #fff;
+}
+
+.cardtp .face h2{
+	text-transform: uppercase;
+	transform: perspective(500px) translateZ(50px);
+}
+
+/*UNBRAKO------------------------------------------------------------------------------*/
+
+.cardunbrako{
+	position: relative;
+	width: 15%;
+	height: 15%;
+	transform-style: preserve-3d;	
+	margin-left: 29.5%;
+	margin-top: 5%;
+	display: inline-block;
+}
+
+.cardunbrako .face					
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	transform-style: preserve-3d;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-visibility: hidden;
+	transition: 1.5s ease-in-out;
+	transform: perspective(500px) rotateY(0deg);
+}
+
+.cardunbrako .face.front{
+	background: #ff0;			/*3b4f*/
+}
+
+.cardunbrako:hover .face.front{
+	transform: perspective(500px) rotateY(180deg);
+}
+
+.cardunbrako .face.back{
+	background: url("Logo_Unbrako.gif");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	color: #fff;
+	transform: perspective(500px) rotateY(180deg);
+}
+
+.cardunbrako:hover .face.back{
+	transform: perspective(500px) rotateY(360deg);
+	background-color: #fff;
+}
+
+.cardunbrako .face h2{
+	text-transform: uppercase;
+	transform: perspective(500px) translateZ(50px);
+}
+
+/*VENUS------------------------------------------------------------------------------*/
+
+.cardvenus{
+	position: relative;
+	width: 15%;
+	height: 15%;
+	transform-style: preserve-3d;	
+	margin-left: 7%;
+	margin-top: 5%;
+	display: inline-block;
+}
+
+.cardvenus .face					
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	transform-style: preserve-3d;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-visibility: hidden;
+	transition: 1.5s ease-in-out;
+	transform: perspective(500px) rotateY(0deg);
+}
+
+.cardvenus .face.front{
+	background: #3bc2ff;			/*3b4f*/
+}
+
+.cardvenus:hover .face.front{
+	transform: perspective(500px) rotateY(180deg);
+}
+
+.cardvenus .face.back{
+	background: url("Logo_Venus.jpg");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	color: #fff;
+	transform: perspective(500px) rotateY(180deg);
+}
+
+.cardvenus:hover .face.back{
+	transform: perspective(500px) rotateY(360deg);
+	background-color: #fff;
+}
+
+.cardvenus .face h2{
+	text-transform: uppercase;
+	transform: perspective(500px) translateZ(50px);
+}
