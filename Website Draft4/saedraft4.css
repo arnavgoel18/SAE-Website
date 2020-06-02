@@ -26,7 +26,7 @@
 
 .label{
 	margin-top: 20%;
-	margin-left: 25%;
+	margin-left: 20%;
 	height: 20%;
 	width: 30%;
 	color: #fff;
@@ -37,7 +37,7 @@
 }
 
 .label hr{
-	margin-left: 55%;
+	margin-left: 60%;
 	transform: rotate(115deg);
 }
 .nav-item{
@@ -65,7 +65,7 @@
 	width:30%;
 	height: auto;
 	margin-top: 17%;
-	margin-right: 15%;
+	margin-right: 20%;
 	background-color: ;
 	display: inline-block;
 }
@@ -145,5 +145,28 @@
 /*Footer*/
 
 .footer{
-	
+	width: 100%;
+	height: 60px;
+	background-color: #fff;
+	padding-top: 1.1%;
+	padding-left: 5%;
+
+}
+
+.copyright{
+	float: left;
+
+}
+
+.social-media{
+	float: right;
+	margin-right: 10%;
+	font-size: 20px;
+
+}
+
+.footer-sub{
+	width: 100%;
+	height: 10px;
+	background-color: #FE8A54;
 }
