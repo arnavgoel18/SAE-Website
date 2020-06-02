@@ -1,0 +1,219 @@
+/*CMSR----------------------------------------------------------------------------------*/
+
+.cardcmsr{
+	position: relative;
+	width: 15%;
+	height: 15%;
+	transform-style: preserve-3d;	
+	margin-left: 7%;
+	margin-top: 5%;
+	display: inline-block;
+}
+
+.cardcmsr .face					
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	transform-style: preserve-3d;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-visibility: hidden;
+	transition: 1.5s ease-in-out;
+	transform: perspective(500px) rotateY(0deg);
+}
+
+.cardcmsr .face.front{
+	background: #3bc2ff;			/*3b4f*/
+}
+
+.cardcmsr:hover .face.front{
+	transform: perspective(500px) rotateY(180deg);
+}
+
+.cardcmsr .face.back{
+	background: url("Logo_CMSR.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	color: #fff;
+	transform: perspective(500px) rotateY(180deg);
+}
+
+.cardcmsr:hover .face.back{
+	transform: perspective(500px) rotateY(360deg);
+	background-color: #fff;
+}
+
+.cardcmsr .face h2{
+	text-transform: uppercase;
+	transform: perspective(500px) translateZ(50px);
+}
+
+/*Endico------------------------------------------------------------------------------*/
+
+.cardendico{
+	position: relative;
+	width: 15%;
+	height: 15%;
+	transform-style: preserve-3d;	
+	margin-left: 7%;
+	margin-top: 5%;
+	display: inline-block;
+}
+
+.cardendico .face					
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	transform-style: preserve-3d;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-visibility: hidden;
+	transition: 1.5s ease-in-out;
+	transform: perspective(500px) rotateY(0deg);
+}
+
+.cardendico .face.front{
+	background: #ff0;			/*3b4f*/
+}
+
+.cardendico:hover .face.front{
+	transform: perspective(500px) rotateY(180deg);
+}
+
+.cardendico .face.back{
+	background: url("Logo_Endico.jpg");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	color: #fff;
+	transform: perspective(500px) rotateY(180deg);
+}
+
+.cardendico:hover .face.back{
+	transform: perspective(500px) rotateY(360deg);
+	background-color: #fff;
+}
+
+.cardendico .face h2{
+	text-transform: uppercase;
+	transform: perspective(500px) translateZ(50px);
+}
+
+/*HERO----------------------------------------------------------------------------------*/
+
+.cardhero{
+	position: relative;
+	width: 15%;
+	height: 15%;
+	transform-style: preserve-3d;	
+	margin-left: 7%;
+	margin-top: 5%;
+	display: inline-block;
+}
+
+.cardhero .face					
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	transform-style: preserve-3d;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-visibility: hidden;
+	transition: 1.5s ease-in-out;
+	transform: perspective(500px) rotateY(0deg);
+}
+
+.cardhero .face.front{
+	background: #3bc2ff;			/*3b4f*/
+}
+
+.cardhero:hover .face.front{
+	transform: perspective(500px) rotateY(180deg);
+}
+
+.cardhero .face.back{
+	background: url("Logo_Hero.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	color: #fff;
+	transform: perspective(500px) rotateY(180deg);
+}
+
+.cardhero:hover .face.back{
+	transform: perspective(500px) rotateY(360deg);
+	background-color: #fff;
+}
+
+.cardhero .face h2{
+	text-transform: uppercase;
+	transform: perspective(500px) translateZ(50px);
+}
+
+/*Instapro------------------------------------------------------------------------------*/
+
+.cardinstapro{
+	position: relative;
+	width: 15%;
+	height: 15%;
+	transform-style: preserve-3d;	
+	margin-left: 7%;
+	margin-top: 5%;
+	display: inline-block;
+}
+
+.cardinstapro .face					
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	transform-style: preserve-3d;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-visibility: hidden;
+	transition: 1.5s ease-in-out;
+	transform: perspective(500px) rotateY(0deg);
+}
+
+.cardinstapro .face.front{
+	background: #ff0;			/*3b4f*/
+}
+
+.cardinstapro:hover .face.front{
+	transform: perspective(500px) rotateY(180deg);
+}
+
+.cardinstapro .face.back{
+	background: url("Logo_Instapro.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	color: #fff;
+	transform: perspective(500px) rotateY(180deg);
+}
+
+.cardinstapro:hover .face.back{
+	transform: perspective(500px) rotateY(360deg);
+	background-color: #fff;
+}
+
+.cardinstapro .face h2{
+	text-transform: uppercase;
+	transform: perspective(500px) translateZ(50px);
+}

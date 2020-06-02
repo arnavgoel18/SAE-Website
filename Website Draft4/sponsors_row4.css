@@ -1,0 +1,164 @@
+/*TP------------------------------------------------------------------------------*/
+
+.cardtp{
+	position: relative;
+	width: 15%;
+	height: 15%;
+	transform-style: preserve-3d;	
+	margin-left: 19%;
+	margin-top: 5%;
+	display: inline-block;
+}
+
+.cardtp .face					
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	transform-style: preserve-3d;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-visibility: hidden;
+	transition: 1.5s ease-in-out;
+	transform: perspective(500px) rotateY(0deg);
+}
+
+.cardtp .face.front{
+	background: #3bc2ff;			/*3b4f*/
+}
+
+.cardtp:hover .face.front{
+	transform: perspective(500px) rotateY(180deg);
+}
+
+.cardtp .face.back{
+	background: url("Logo_Tp.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	color: #fff;
+	transform: perspective(500px) rotateY(180deg);
+}
+
+.cardtp:hover .face.back{
+	transform: perspective(500px) rotateY(360deg);
+	background-color: #fff;
+}
+
+.cardtp .face h2{
+	text-transform: uppercase;
+	transform: perspective(500px) translateZ(50px);
+}
+
+/*UNBRAKO------------------------------------------------------------------------------*/
+
+.cardunbrako{
+	position: relative;
+	width: 15%;
+	height: 15%;
+	transform-style: preserve-3d;	
+	margin-left: 7%;
+	margin-top: 5%;
+	display: inline-block;
+}
+
+.cardunbrako .face					
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	transform-style: preserve-3d;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-visibility: hidden;
+	transition: 1.5s ease-in-out;
+	transform: perspective(500px) rotateY(0deg);
+}
+
+.cardunbrako .face.front{
+	background: #ff0;			/*3b4f*/
+}
+
+.cardunbrako:hover .face.front{
+	transform: perspective(500px) rotateY(180deg);
+}
+
+.cardunbrako .face.back{
+	background: url("Logo_Unbrako.gif");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	color: #fff;
+	transform: perspective(500px) rotateY(180deg);
+}
+
+.cardunbrako:hover .face.back{
+	transform: perspective(500px) rotateY(360deg);
+	background-color: #fff;
+}
+
+.cardunbrako .face h2{
+	text-transform: uppercase;
+	transform: perspective(500px) translateZ(50px);
+}
+
+/*VENUS------------------------------------------------------------------------------*/
+
+.cardvenus{
+	position: relative;
+	width: 15%;
+	height: 15%;
+	transform-style: preserve-3d;	
+	margin-left: 7%;
+	margin-top: 5%;
+	display: inline-block;
+}
+
+.cardvenus .face					
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	transform-style: preserve-3d;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-visibility: hidden;
+	transition: 1.5s ease-in-out;
+	transform: perspective(500px) rotateY(0deg);
+}
+
+.cardvenus .face.front{
+	background: #3bc2ff;			/*3b4f*/
+}
+
+.cardvenus:hover .face.front{
+	transform: perspective(500px) rotateY(180deg);
+}
+
+.cardvenus .face.back{
+	background: url("Logo_Venus.jpg");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	color: #fff;
+	transform: perspective(500px) rotateY(180deg);
+}
+
+.cardvenus:hover .face.back{
+	transform: perspective(500px) rotateY(360deg);
+	background-color: #fff;
+}
+
+.cardvenus .face h2{
+	text-transform: uppercase;
+	transform: perspective(500px) translateZ(50px);
+}

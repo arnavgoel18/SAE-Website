@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+*{
+	margin:0;
+	padding:0;
+	font-family: 'Poppins' ,sanss-serif;
+}
+
+.cardsholder{
+	width: 100%;
+	height: 1000px;
+	background: #000;
+	position: absolute;
+}
+
+/*HONDA--------------------------------------------------------------------------------*/
+
+.cardhonda{							
+	position: relative;
+	width: 15%;
+	height: 15%;
+	transform-style: preserve-3d;	
+	margin-left: 7%;
+	margin-top: 5%;
+	display: inline-block;
+	border: solid 1px;
+}
+
+.cardhonda .face					
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	transform-style: preserve-3d;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-visibility: hidden;
+	transition: 1.5s ease-in-out;
+	transform: perspective(500px) rotateY(0deg);
+}
+
+.cardhonda .face.front{
+	background: #ff0;
+}
+
+.cardhonda:hover .face.front{
+	transform: perspective(500px) rotateY(180deg);
+}
+
+.cardhonda .face.back{
+	background: url("Logo_Honda.jpg");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	color: #fff;
+	transform: perspective(500px) rotateY(180deg);
+}
+
+.cardhonda:hover .face.back{
+	transform: perspective(500px) rotateY(360deg);
+	background-color: #fff;
+}
+
+.cardhonda .face h2{
+	text-transform: uppercase;
+	transform: perspective(500px) translateZ(50px);
+}
+
+
+/*Ricardo------------------------------------------------------------------------------*/
+
+.cardricardo{
+	position: relative;
+	width: 15%;
+	height: 15%;
+	transform-style: preserve-3d;	
+	margin-left: 7%;
+	margin-top: 5%;
+	display: inline-block;
+}
+
+.cardricardo .face					
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	transform-style: preserve-3d;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-visibility: hidden;
+	transition: 1.5s ease-in-out;
+	transform: perspective(500px) rotateY(0deg);
+}
+
+.cardricardo .face.front{
+	background: #3bc2ff;			/*3b4f*/
+}
+
+.cardricardo:hover .face.front{
+	transform: perspective(500px) rotateY(180deg);
+}
+
+.cardricardo .face.back{
+	background: url("Logo_Ricardo.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	color: #fff;
+	transform: perspective(500px) rotateY(180deg);
+}
+
+.cardricardo:hover .face.back{
+	transform: perspective(500px) rotateY(360deg);
+	background-color: #fff;
+}
+
+.cardricardo .face h2{
+	text-transform: uppercase;
+	transform: perspective(500px) translateZ(50px);
+}
+
+
+/*Scolarian------------------------------------------------------------------------------*/
+
+.cardscolarian{
+	position: relative;
+	width: 15%;
+	height: 15%;
+	transform-style: preserve-3d;	
+	margin-left: 7%;
+	margin-top: 5%;
+	display: inline-block;
+}
+
+.cardscolarian .face					
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	transform-style: preserve-3d;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-visibility: hidden;
+	transition: 1.5s ease-in-out;
+	transform: perspective(500px) rotateY(0deg);
+}
+
+.cardscolarian .face.front{
+	background: #ff0;			/*3b4f*/
+}
+
+.cardscolarian:hover .face.front{
+	transform: perspective(500px) rotateY(180deg);
+}
+
+.cardscolarian .face.back{
+	background: url("Logo_Scolarian.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	color: #fff;
+	transform: perspective(500px) rotateY(180deg);
+}
+
+.cardscolarian:hover .face.back{
+	transform: perspective(500px) rotateY(360deg);
+	background-color: #fff;
+}
+
+.cardscolarian .face h2{
+	text-transform: uppercase;
+	transform: perspective(500px) translateZ(50px);
+}
+
+/*Altair------------------------------------------------------------------------------*/
+
+.cardaltair{
+	position: relative;
+	width: 15%;
+	height: 15%;
+	transform-style: preserve-3d;	
+	margin-left: 7%;
+	margin-top: 5%;
+	display: inline-block;
+}
+
+.cardaltair .face					
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	transform-style: preserve-3d;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-visibility: hidden;
+	transition: 1.5s ease-in-out;
+	transform: perspective(500px) rotateY(0deg);
+}
+
+.cardaltair .face.front{
+	background: #3bc2ff;			/*3b4f*/
+}
+
+.cardaltair:hover .face.front{
+	transform: perspective(500px) rotateY(180deg);
+}
+
+.cardaltair .face.back{
+	background: url("Logo_Altair.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	color: #fff;
+	transform: perspective(500px) rotateY(180deg);
+}
+
+.cardaltair:hover .face.back{
+	transform: perspective(500px) rotateY(360deg);
+	background-color: #fff;
+}
+
+.cardaltair .face h2{
+	text-transform: uppercase;
+	transform: perspective(500px) translateZ(50px);
+}
