@@ -1,57 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
-
 *{
-	margin:0;
-	padding:0;
-	font-family: 'Poppins' ,sanss-serif;
+	padding: 0;
+	margin: 0;
 }
 
-.aboutus{
-	width: 100%;
-	height: 70vh;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	background: #000;
-	border: solid red 1px;
-}
-
-.frame{
-	position: relative;
-	width: 300px;
-	height: 400px;
-	transform-style: preserve-3d;
-}
-
-.frame .face{
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	transform-style: preserve-3d;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	backface-visibility: hidden;
-	transition: 2s ease-in-out;
-	transform: perspective(500px) rotateY(0deg);
-}
-
-.frame .face.front{
-	background: #ff0;
-}
-
-.frame:hover .face.front{
-	transform: perspective(500px) rotateY(180deg);
-}
-
-.frame .face.back{
-	background-color: #3bc2ff;
-	color: #fff;
-	transform: perspective(500px) rotateY(180deg);
-}
-
-.frame:hover .frame.back{
- 	transform: perspective(500px) rotateY(360deg);
-}
