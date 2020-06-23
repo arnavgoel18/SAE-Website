@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous"> <!--Bootstrap file for icons-->	
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
+    <title>Masonry Layout con CSS Grid</title>
+    <link rel="stylesheet" type="text/css" href="SAE_Gallery.css">
+    <link rel="stylesheet" type="text/css" href="footer.css">
+
+    <script type="text/javascript">
+    	$(function() {
+		  $(".img-w").each(function() {
+		    $(this).wrap("<div class='img-c'></div>")
+		    let imgSrc = $(this).find("img").attr("src");
+		     $(this).css('background-image', 'url(' + imgSrc + ')');
+		  })
+		            
+		  
+		  $(".img-c").click(function() {
+		    let w = $(this).outerWidth()
+		    let h = $(this).outerHeight()
+		    let x = $(this).offset().left
+		    let y = $(this).offset().top
+		    
+		    
+		    $(".active").not($(this)).remove()
+		    let copy = $(this).clone();
+		    copy.insertAfter($(this)).height(h).width(w).delay(500).addClass("active")
+		    $(".active").css('top', y - 8);
+		    $(".active").css('left', x - 8);
+		    
+		      setTimeout(function() {
+		    copy.addClass("positioned")
+		  }, 0)
+		    
+		  }) 		  
+		})
+
+		$(document).on("click", ".img-c.active", function() {
+		  let copy = $(this)
+		  copy.removeClass("positioned active").addClass("postactive")
+		  setTimeout(function() {
+		    copy.remove();
+		  }, 500)
+		})
+    </script>
+</head>
+<body>
+	<nav class="navbar navbar-expand-md navbar-trans navbar-dark fixed-top">
+		<a class="navbar-brand" href="#">SAE<font color="#188BA3">NITKKR</font></a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon" style="color:white;"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarNavDropdown">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item active">
+					<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdonwMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					Teams
+					</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+						<a class="dropdown-item" href="#">Accelerons</a>
+						<a class="dropdown-item" href="#">Nitrox</a>
+					</div>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuEvents" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						Events
+					</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuEvents">
+						<a class="dropdown-item" href="#">Autokriti</a>
+					</div>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Contact Us</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Pricing</a>
+				</li>
+				<li class="nav-item">
+					<hr size="2" width="40px" color="#fff">
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#"> Login </a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+
+   	<div class="gallery">
+	  	<div class="img-w">
+	    	<img src="https://images.unsplash.com/photo-1485766410122-1b403edb53db?dpr=1&auto=format&fit=crop&w=1500&h=846&q=80&cs=tinysrgb&crop=" alt="" />
+		</div>
+	  
+	  	<div class="img-w">
+	  		<img src="https://images.unsplash.com/photo-1485793997698-baba81bf21ab?dpr=1&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=" alt="" />
+	  	</div>
+	  	<div class="img-w">
+	  		<img src="https://images.unsplash.com/photo-1485871800663-71856dc09ec4?dpr=1&auto=format&fit=crop&w=1500&h=2250&q=80&cs=tinysrgb&crop=" alt="" />
+	  	</div>
+	  	<div class="img-w">
+	  		<img src="https://images.unsplash.com/photo-1485871882310-4ecdab8a6f94?dpr=1&auto=format&fit=crop&w=1500&h=2250&q=80&cs=tinysrgb&crop=" alt="" />
+	  	</div>
+	  	<div class="img-w">
+	  		<img src="https://images.unsplash.com/photo-1485872304698-0537e003288d?dpr=1&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=" alt="" />
+	  	</div>
+	  	<div class="img-w">
+	  		<img src="https://images.unsplash.com/photo-1485872325464-50f17b82075a?dpr=1&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=" alt="" />
+	  	</div>
+	  	<div class="img-w">
+	  		<img src="https://images.unsplash.com/photo-1470171119584-533105644520?dpr=1&auto=format&fit=crop&w=1500&h=886&q=80&cs=tinysrgb&crop=" alt="" />
+	  	</div>
+	  	<div class="img-w">
+	  		<img src="https://images.unsplash.com/photo-1485881787686-9314a2bc8f9b?dpr=1&auto=format&fit=crop&w=1500&h=969&q=80&cs=tinysrgb&crop=" alt="" />
+	  	</div>
+	  	<div class="img-w">
+	  		<img src="https://images.unsplash.com/photo-1485889397316-8393dd065127?dpr=1&auto=format&fit=crop&w=1500&h=843&q=80&cs=tinysrgb&crop=" alt="" />
+	  	</div>
+	</div>
+
+	<div class="gallery">
+	  	<div class="img-w">
+	    	<img src="https://images.unsplash.com/photo-1485766410122-1b403edb53db?dpr=1&auto=format&fit=crop&w=1500&h=846&q=80&cs=tinysrgb&crop=" alt="" />
+		</div>
+	  
+	  	<div class="img-w">
+	  		<img src="https://images.unsplash.com/photo-1485793997698-baba81bf21ab?dpr=1&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=" alt="" />
+	  	</div>
+	  	<div class="img-w">
+	  		<img src="https://images.unsplash.com/photo-1485871800663-71856dc09ec4?dpr=1&auto=format&fit=crop&w=1500&h=2250&q=80&cs=tinysrgb&crop=" alt="" />
+	  	</div>
+	  	<div class="img-w">
+	  		<img src="https://images.unsplash.com/photo-1485871882310-4ecdab8a6f94?dpr=1&auto=format&fit=crop&w=1500&h=2250&q=80&cs=tinysrgb&crop=" alt="" />
+	  	</div>
+	  	<div class="img-w">
+	  		<img src="https://images.unsplash.com/photo-1485872304698-0537e003288d?dpr=1&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=" alt="" />
+	  	</div>
+	  	<div class="img-w">
+	  		<img src="https://images.unsplash.com/photo-1485872325464-50f17b82075a?dpr=1&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=" alt="" />
+	  	</div>
+	  	<div class="img-w">
+	  		<img src="https://images.unsplash.com/photo-1470171119584-533105644520?dpr=1&auto=format&fit=crop&w=1500&h=886&q=80&cs=tinysrgb&crop=" alt="" />
+	  	</div>
+	  	<div class="img-w">
+	  		<img src="https://images.unsplash.com/photo-1485881787686-9314a2bc8f9b?dpr=1&auto=format&fit=crop&w=1500&h=969&q=80&cs=tinysrgb&crop=" alt="" />
+	  	</div>
+	  	<div class="img-w">
+	  		<img src="https://images.unsplash.com/photo-1485889397316-8393dd065127?dpr=1&auto=format&fit=crop&w=1500&h=843&q=80&cs=tinysrgb&crop=" alt="" />
+	  	</div>
+	</div>
+
+	<div class="gallery">
+	  	<div class="img-w">
+	    	<img src="https://images.unsplash.com/photo-1485766410122-1b403edb53db?dpr=1&auto=format&fit=crop&w=1500&h=846&q=80&cs=tinysrgb&crop=" alt="" />
+		</div>
+	  
+	  	<div class="img-w">
+	  		<img src="https://images.unsplash.com/photo-1485793997698-baba81bf21ab?dpr=1&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=" alt="" />
+	  	</div>
+	  	<div class="img-w">
+	  		<img src="https://images.unsplash.com/photo-1485871800663-71856dc09ec4?dpr=1&auto=format&fit=crop&w=1500&h=2250&q=80&cs=tinysrgb&crop=" alt="" />
+	  	</div>
+	  	<div class="img-w">
+	  		<img src="https://images.unsplash.com/photo-1485871882310-4ecdab8a6f94?dpr=1&auto=format&fit=crop&w=1500&h=2250&q=80&cs=tinysrgb&crop=" alt="" />
+	  	</div>
+	  	<div class="img-w">
+	  		<img src="https://images.unsplash.com/photo-1485872304698-0537e003288d?dpr=1&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=" alt="" />
+	  	</div>
+	  	<div class="img-w">
+	  		<img src="https://images.unsplash.com/photo-1485872325464-50f17b82075a?dpr=1&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=" alt="" />
+	  	</div>
+	  	<div class="img-w">
+	  		<img src="https://images.unsplash.com/photo-1470171119584-533105644520?dpr=1&auto=format&fit=crop&w=1500&h=886&q=80&cs=tinysrgb&crop=" alt="" />
+	  	</div>
+	  	<div class="img-w">
+	  		<img src="https://images.unsplash.com/photo-1485881787686-9314a2bc8f9b?dpr=1&auto=format&fit=crop&w=1500&h=969&q=80&cs=tinysrgb&crop=" alt="" />
+	  	</div>
+	  	<div class="img-w">
+	  		<img src="https://images.unsplash.com/photo-1485889397316-8393dd065127?dpr=1&auto=format&fit=crop&w=1500&h=843&q=80&cs=tinysrgb&crop=" alt="" />
+	  	</div>
+	</div>
+	
+	<!--Footer-->
+	<div class="footer" style="margin-top: 5px;">
+		<div class="copyright">
+			<i class="fa fa-copyright" aria-hidden="true"></i> 2020 SAE National Institute of Technology, Kurukshetra
+		</div>
+		<div class="social-media">
+			<a class="btn" href="">
+				<i class="fab fa-facebook-f"></i>
+			</a>
+			<a class="btn" href="">
+				<i class="fab fa-instagram"></i>
+			</a>
+			<a class="btn" href="">
+				<i class="fab fa-twitter"></i>
+			</a>
+			<a class="btn" href="">
+				<i class="fab fa-youtube"></i>
+			</a>
+		</div>
+	</div>
+	<div class="footer-sub">
+		
+	</div>
+</body>
+</html>
