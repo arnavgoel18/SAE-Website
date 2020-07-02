@@ -1,0 +1,98 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+nav{
+	position: fixed;
+}
+
+.nav-background{
+	width: 100%;
+	height: 80px;
+	background-color: #000;
+}
+
+.nav-item{
+	padding: 10px;
+}
+
+.nav-link{
+	color:white!important;
+	font-size: 20px;
+}
+
+.navbar-brand{
+	color: white;
+	padding-left: 5%;
+	font-size: 25px;
+}
+
+.navbar-trans{
+	background:transparent;
+}
+
+.nav-item hr{
+	transform: rotate(90deg);
+}
+
+.dropdown-item{
+	background: #000!important;
+}
+
+.donors{
+	width: 100%;
+	height: auto;
+	color: #fff;
+	padding: 2%;
+	background-color: #000; 
+	justify-content: center;
+}
+
+table{
+	width: 70%;
+	margin-left: 15%;
+	border-radius: 50%;
+}
+
+table tr{
+	height: 50px;
+}
+
+tbody td{
+	padding-left: 10%;
+	padding-top: 2%;
+	padding-bottom: 2%;
+}
+
+thead tr{
+	background-color: #296669;
+}
+
+.even{
+	background-color: #BECEC9;
+}
+
+.odd{
+	background-color: #fff;
+	color: #000;
+}
+
+.donors-heading{
+	width: 100%;
+	background-color: #000;
+	height: auto;
+	border-top: solid #fff 1px;
+	padding: 1%;
+}
+
+.pictures{
+	width: 80%;
+	height: 250px;
+	background: url('fundraising.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	margin-left: 10%;
+}

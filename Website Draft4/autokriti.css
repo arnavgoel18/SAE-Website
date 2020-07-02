@@ -1,6 +1,8 @@
 *{
 	padding: 0;
 	margin: 0;
+	box-sizing: border-box;
+	font-family: "Open Sans", sans-serif;
 }
 
 .label{
@@ -43,18 +45,83 @@
 /*About*/
 
 .about{
-	width: 100%;
-	height: 100%;
+	min-height:50vh;
+	display: flex;
+	align-items: center;
+	background-color: #f1f1f1;
 	position: relative;
-	background: #111;
-	justify-content: center;
 }
 
-.content{
-	color: #fff;
-	font-size: 20px;
-	text-align: center;
-	padding: 2% 16%;
+.about-section{
+	background: url(autokriti_logo.jpg);
+	background-position: left;
+	background-repeat: no-repeat;
+	background-size: 55%;
+	background-color: #fdfdfd;
+	overflow: hidden;
+	padding: 20px 0;
+}
+
+.inner-container{
+	width: 55%;
+	float: right;
+	background-color: #fdfdfd;
+	padding: 100px;
+}
+
+.inner-container h1{
+	margin-bottom: 30px;
+	font-size: 30px;
+	font-weight: 900;
+}
+
+.text{
+	font-size: 13px;
+	color: #545454;
+	line-height: 25px;
+	text-align: justify;
+	margin-bottom: 40px;
+}
+
+@media screen and(max-width: 1200px){
+	.inner-container{
+		padding: 80px;
+	}
+}
+
+@media screen and(max-width: 1000px){
+	.about-section{
+		background-size: 100%;
+		padding: 100px 40px;
+	}
+	.inner-container{
+		width: 100%;
+	}
+}
+
+@media screen and(max-width: 600px){
+	.about-section{
+		padding: 0;
+	}
+	.inner-container{
+		padding: 60px;
+	}
+}
+
+
+/*Carrousel*/
+
+.container{
+	height: 500px;
+}
+
+#myCarousel{
+	height: 500px;
+	width: 100%;
+}
+
+.container img{
+	object-fit: contain;
 }
 
 

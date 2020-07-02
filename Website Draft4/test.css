@@ -1,0 +1,44 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: "Open Sans", sans-serif;
+	box-sizing: border-box;
+}
+
+.about{
+	min-height:50vh;
+	display: flex;
+	align-items: center;
+	background-color: #f1f1f1;
+}
+
+.about-section{
+	background: url(autokriti_logo.jpg);
+	background-position: left;
+	background-repeat: no-repeat;
+	background-size: 55%;
+	background-color: #fdfdfd;
+	overflow: hidden;
+	padding: 20px 0;
+}
+
+.inner-container{
+	width: 55%;
+	float: right;
+	background-color: #fdfdfd;
+	padding: 100px;
+}
+
+.inner-container h1{
+	margin-bottom: 30px;
+	font-size: 30px;
+	font-weight: 900;
+}
+
+.text{
+	font-size: 13px;
+	color: #545454;
+	line-height: 25px;
+	text-align: justify;
+	margin-bottom: 40px;
+}
