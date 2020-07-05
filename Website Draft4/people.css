@@ -1,0 +1,100 @@
+.mentors{
+	margin: 0;
+	padding: 0;
+	background-color: #222;
+	height: 500px;
+	width: 100%;
+}
+
+.ment{
+	display: flex;
+	position: absolute;
+	height: 300px;
+	width: 300px;
+	background: #000;
+	top: 15%;
+	cursor: pointer;
+  	-webkit-user-select: none;
+   	-moz-user-select: none;
+   	-ms-user-select: none;
+   	user-select: none;
+}
+
+.ment1{
+	left: 12.5%;
+}
+
+.ment2{
+	left: 37.5%;
+}
+
+.ment3{
+	left: 62.5%;
+}
+
+.text{
+	position: absolute;
+	color: #fff;
+	height: 300px;
+	width: 300px;
+	background: rgba(255, 156, 0, 0.7) fixed;
+	line-height: 30px; 
+	padding-top: 35%;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	display: none;
+}
+
+.ment:hover .text{
+	display: block;
+}
+
+/*POPUP PART---------------------------------------------------------*/
+
+
+/* The actual popup */
+.ment .popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 2;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.ment .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.ment .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
