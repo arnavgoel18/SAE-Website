@@ -1,84 +1,495 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>TEST</title>
-	<link rel="stylesheet" type="text/css" href="test.css">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+
+	 <!--Bootstrap file for icons-->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="']=sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+	<!--Navbar-->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+	
+	<!--Timeline-->
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<!--End Timeline-->
+
+
+	<title>Autokriti</title>
+
+	<link rel="stylesheet" type="text/css" href="testdel2.css">
+	<link rel="stylesheet" type="text/css" href="carrousel.css"> 
+	<link rel="stylesheet" type="text/css" href="timeline.css">
+	<link rel="stylesheet" type="text/css" href="footer.css">
+
 </head>
 <body>
-	<div class="timeline-container">
-		<div class="timeline">
-			<ul>
-				<li>
-					<div class="content">
-						<h3>What is Lorem Ipsum?</h3>
-						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-						</p>
-					</div>
-					<div class="time">
-						<h4>January 2018</h4>
+	<nav class="navbar navbar-expand-md navbar-trans navbar-dark fixed-top">
+		<a class="navbar-brand" href="#">SAE<font color="#188BA3">NITKKR</font></a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon" style="color:white;"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarNavDropdown">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item active">
+				<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					Teams
+					</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+					<a class="dropdown-item" href="#">Accelerons</a>
+					<a class="dropdown-item" href="#">Nitrox</a>
 					</div>
 				</li>
-				<li>
-					<div class="content">
-						<h3>What is Lorem Ipsum?</h3>
-						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-						</p>
-					</div>
-					<div class="time">
-						<h4>January 2018</h4>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuEvents" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						Events
+					</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuEvents">
+					<a class="dropdown-item" href="#">Autokriti</a>
 					</div>
 				</li>
-				<li>
-					<div class="content">
-						<h3>What is Lorem Ipsum?</h3>
-						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-						</p>
-					</div>
-					<div class="time">
-						<h4>January 2018</h4>
-					</div>
+				<li class="nav-item">
+				<a class="nav-link" href="#">Discuss</a>
 				</li>
-				<li>
-					<div class="content">
-						<h3>What is Lorem Ipsum?</h3>
-						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-						</p>
-					</div>
-					<div class="time">
-						<h4>January 2018</h4>
-					</div>
+				<li class="nav-item">
+				<a class="nav-link" href="#">Pricing</a>
 				</li>
-				<li>
-					<div class="content">
-						<h3>What is Lorem Ipsum?</h3>
-						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-						</p>
-					</div>
-					<div class="time">
-						<h4>January 2018</h4>
-					</div>
+				<li class="nav-item">
+					<hr size="2" width="40px" color="#fff">
 				</li>
-				<li>
-					<div class="content">
-						<h3>What is Lorem Ipsum?</h3>
-						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-						</p>
-					</div>
-					<div class="time">
-						<h4>January 2018</h4>
-					</div>
+				<li class="nav-item">
+					<a class="nav-link" href="#"> Login </a>
 				</li>
-				<div style="clear: both;"></div>
 			</ul>
 		</div>
+	</nav>
+
+	<!--Heading-->
+
+	<div class="heading-container">
+		<div class="heading-back">
+			<div class="heading-content">
+
+			</div>
+		</div>
 	</div>
+
+	<!--Carroussel-->
+
+	<div class="slideshow-container-container">
+		<div class="slideshow-container">
+			<div class="mySlides fade">
+			  <div class="numbertext">1 / 7</div>
+			  <img src="c1.jpg" style="width:100%">
+			  <div class="text">Caption Text</div>
+			</div>
+
+			<div class="mySlides fade">
+			  <div class="numbertext">2 / 7</div>
+			  <img src="c2.jpg" style="width:100%">
+			  <div class="text">Caption Two</div>
+			</div>
+
+			<div class="mySlides fade">
+			  <div class="numbertext">3 / 7</div>
+			  <img src="c3.jpg" style="width:100%">
+			  <div class="text">Caption Three</div>
+			</div>
+
+			<div class="mySlides fade">
+			  <div class="numbertext">4 / 7</div>
+			  <img src="c4.jpg" style="width:100%">
+			  <div class="text">Caption Four</div>
+			</div>
+
+			<div class="mySlides fade">
+			  <div class="numbertext">5 / 7</div>
+			  <img src="c5.jpg" style="width:100%">
+			  <div class="text">Caption Five</div>
+			</div>
+
+			<div class="mySlides fade">
+			  <div class="numbertext">6 / 7</div>
+			  <img src="c6.jpg" style="width:100%">
+			  <div class="text">Caption Six</div>
+			</div>
+
+			<div class="mySlides fade">
+			  <div class="numbertext">7 / 7</div>
+			  <img src="c7.jpg" style="width:100%">
+			  <div class="text">Caption Seven</div>
+			</div>
+
+			</div>
+		
+			<br>
+
+			<div style="text-align:center">
+			  <span class="dot"></span> 
+			  <span class="dot"></span> 
+			  <span class="dot"></span>
+			  <span class="dot"></span> 
+			  <span class="dot"></span> 
+			  <span class="dot"></span>
+			  <span class="dot"></span> 
+			</div>
+		</div>
+
+		<script>
+		var slideIndex = 0;
+		showSlides();
+
+		function showSlides() {
+		  var i;
+		  var slides = document.getElementsByClassName("mySlides");
+		  var dots = document.getElementsByClassName("dot");
+		  for (i = 0; i < slides.length; i++) {
+		    slides[i].style.display = "none";  
+		  }
+		  slideIndex++;
+		  if (slideIndex > slides.length) {slideIndex = 1}    
+		  for (i = 0; i < dots.length; i++) {
+		    dots[i].className = dots[i].className.replace(" active", "");
+		  }
+		  slides[slideIndex-1].style.display = "block";  
+		  dots[slideIndex-1].className += " active";
+		  setTimeout(showSlides, 4000); // Change image every 2 seconds
+		}
+		</script>
+
+		<!--AboutUs-->
+
+		<div class="about-container">
+			<div class="about-content">
+				<center><h1>What is Autokriti?</h1></center><br>
+				Autokriti, North India’s largest automotive workshop, has developed over the years into so much more : a melting pot of automobile experience , a launchpad for upcoming engineers , a showcase of spectacle - where the dreams come alive and every step you take is a step towards new experience,where you can never see it all , but when you do see lasts a lifetime , where friendships are born and memories are made into the soft glow of the bonfires.<br><br>It’s a little bubble in space and time of infinite possibilities , the place to be in September/October ; and in short :the best learning 3 days of your life. Our mission is to herald the start of unique mission to share knowledge in India and to give a chance to young guns to break new ground on the automobile engineering . Embrace yourself for another technical extravaganza and join us at SAE NIT KURUKSHETRA!
+			</div>
+		</div>
+
+		<!--Timeline-->
+
+		<div class="timeline-container" id="timeline-1">
+			<div class="timeline-header">
+				<h2 class="timeline-header__title">Autokriti Through The Years</h2>
+		    	<h3 class="timeline-header__subtitle">Strive for Ecxellence</h3>
+		  	</div>
+			<div class="timeline">
+		    	<div class="timeline-item" data-text="Autokriti 11.0">
+		      		<div class="timeline__content">
+			        	<h2 class="timeline__content-title">2019</h2>
+			        	<p class="timeline__content-desc">
+			        		Insights of <b>Porsche V8 Engine</b> and EV<br>
+								Projects on IoT with NodeMCU<br><b> PCB Designing</b><br>
+								MIT APP Inventor<br>
+								Building project using Solidworks<br>
+								<b>CFD & structural analysis</b> using Ansys
+			        	</p>
+		      		</div>
+		    	</div>
+			    <div class="timeline-item" data-text="Autokriti 10.0">
+					<div class="timeline__content">
+			        	<h2 class="timeline__content-title">2018</h2>
+				        <p class="timeline__content-desc">
+				        	IC Engine vs Hybrid vs Electric Vehicle.
+								<br>
+	                            IoT in Python with Arduino<br> Machine Learning<br>Computer Networking
+				        </p>
+			      	</div>
+			    </div>
+			    <div class="timeline-item" data-text="Autokriti 9.0">
+					<div class="timeline__content">
+			        	<h2 class="timeline__content-title">2017</h2>
+			        	<p class="timeline__content-desc">
+			        		<b>Mercedes ML-320</b> Engine Overhaul<br> <b>Audi A4-V6</b> Engine Overhaul
+			        	</p>
+			      </div>
+			    </div>
+		    	<div class="timeline-item" data-text="Autokriti 8.0">
+		      		<div class="timeline__content">
+						<h2 class="timeline__content-title">2016</h2>
+		       			<p class="timeline__content-desc">
+		       				<b>Insights Into the Following Engines :</b><br> &nbsp;&nbsp;&nbsp;AUDI A4 V6<br>&nbsp;&nbsp;&nbsp;Honda City 
+		       			</p>
+		    		</div>
+		    	</div>
+			    <div class="timeline-item" data-text="Autokriti 7.0">
+			    	<div class="timeline__content">
+			        	<h2 class="timeline__content-title">2015</h2>
+			        	<p class="timeline__content-desc">
+			        		Comparison b/w DIESEL and PETROL engine.
+			        	</p>
+			      	</div>
+			    </div>
+			    <div class="timeline-item" data-text="Autokriti 6.0">
+			    	<div class="timeline__content">
+			        	<h2 class="timeline__content-title">2014</h2>
+			        	<p class="timeline__content-desc">
+			        		Petrol Car Overhaul Workshop of <b>Tata NANO.</b>
+			        	</p>
+			      	</div>
+			    </div>
+			    <div class="timeline-item" data-text="Autokriti 5.0">
+			    	<div class="timeline__content">
+			        	<h2 class="timeline__content-title">2013</h2>
+			        	<p class="timeline__content-desc">
+			        		<b>Diesel Car</b> Overhaul Workshop of <b> Tata Indica.</b>
+			        	</p>
+			      	</div>
+			    </div>
+		    	<div class="timeline-item" data-text="Autokriti 4.0">
+		      		<div class="timeline__content">
+		        		<h2 class="timeline__content-title">2012</h2>
+		        		<p class="timeline__content-desc">
+		        			<b>Petrol Car</b> Overall workshop on <b>Maruti 800.</b>
+		        		</p>
+		      		</div>
+		    	</div>
+		    	<div class="timeline-item" data-text="Autokriti 3.0">
+		      		<div class="timeline__content">
+		        		<h2 class="timeline__content-title">2011</h2>
+		        		<p class="timeline__content-desc">
+		        			Petrol Car overhaul workshop.
+		        		</p>
+		      		</div>
+		    	</div>
+		    	<div class="timeline-item" data-text="Autokriti 2.0">
+		      		<div class="timeline__content">
+						<h2 class="timeline__content-title">2010</h2>
+		      			<p class="timeline__content-desc">
+	      					Maruti 800 Overhaul workshop.
+			        	</p>
+		      		</div>
+		    	</div>
+		    	<div class="timeline-item" data-text="Autokriti 1.0">
+		      		<div class="timeline__content">
+		        		<h2 class="timeline__content-title">2009</h2>
+		        		<p class="timeline__content-desc">
+		        			Maruti 800 Engine Overhaul workshop.
+		        		</p>
+		      		</div>
+		    	</div>
+		  	</div>
+		</div>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+		<script>
+		    
+		    (function($) {
+		  $.fn.timeline = function() {
+		    var selectors = {
+		      id: $(this),
+		      item: $(this).find(".timeline-item"),
+		      activeClass: "timeline-item--active",
+		      img: ".timeline__img"
+		    };
+		    selectors.item.eq(0).addClass(selectors.activeClass);
+		    selectors.id.css(
+		      "background-image",
+		      "url(" +
+		        selectors.item
+		          .first()
+		          .find(selectors.img)
+		          .attr("src") +
+		        ")"
+		    );
+		    var itemLength = selectors.item.length;
+		    $(window).scroll(function() {
+		      var max, min;
+		      var pos = $(this).scrollTop();
+		      selectors.item.each(function(i) {
+		        min = $(this).offset().top;
+		        max = $(this).height() + $(this).offset().top;
+		        var that = $(this);
+		        if (i == itemLength - 2 && pos > min + $(this).height() / 2) {
+		          selectors.item.removeClass(selectors.activeClass);
+		          selectors.id.css(
+		            "background-image",
+		            "url(" +
+		              selectors.item
+		                .last()
+		                .find(selectors.img)
+		                .attr("src") +
+		              ")"
+			          );
+			          selectors.item.last().addClass(selectors.activeClass);
+			        } else if (pos <= max - 40 && pos >= min) {
+			          selectors.id.css(
+			            "background-image",
+			            "url(" +
+			              $(this)
+			                .find(selectors.img)
+			                .attr("src") +
+			              ")"
+			          );
+			          selectors.item.removeClass(selectors.activeClass);
+			          $(this).addClass(selectors.activeClass);
+			        }
+			      });
+			    });
+			  };
+			})(jQuery);
+
+			$("#timeline-1").timeline();
+
+		</script>
+
+		<!--End of Timeline-->
+
+		<div class="graph" style="margin-bottom:100px;">
+	        <h1 style="color:black; padding-top: 90px;border-bottom: 1px solid #ccc;" align="center" class="heading">OUR STATS</h1>
+	        <canvas id="myChart" style="height:450px; padding-top: 30px" align="center" data-aos="flip-right"></canvas>
+	    </div>
+
+	    <?php include 'php/footer.php'; ?>
+	    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	                <script src="./js/autokriti.js"></script>
+	                <script>
+	               AOS.init();
+	                
+	                $("#slideshow > div:gt(0)").hide();
+
+			setInterval(function() {
+			  $('#slideshow > div:first')
+			    .fadeOut(1000)
+			    .next()
+			    .fadeIn(1000)
+			    .end()
+			    .appendTo('#slideshow');
+			}, 3000);
+			$(window).scroll(function() {
+			  var y = $(this).scrollTop();
+			  if (y > 800) {
+			    $('.Linkicons').fadeIn();
+			  } else {
+			    $('.Linkicons').fadeOut();
+			  }
+			});
+			
+			var ctx = document.getElementById('myChart').getContext('2d');
+	        var myChart = new Chart(ctx, {
+	            type: 'bar',
+	            data: {
+	                labels: ['1.0', '2.0', '3.0', '4.0', '5.0', '6.0','7.0','8.0','9.0','10.0'],
+	                datasets: [{
+	                    label: '# of Participants',
+	                    data: [80,185,256,304,350,385,495,649,715,828],
+	                    backgroundColor: [
+	                        'rgba(255, 99, 132, 0.2)',
+	                        'rgba(54, 162, 235, 0.2)',
+	                        'rgba(255, 206, 86, 0.2)',
+	                        'rgba(75, 192, 192, 0.2)',
+	                        'rgba(153, 102, 255, 0.2)',
+	                        'rgba(255, 159, 64, 0.2)',
+	                        'rgba(255, 99, 132, 0.2)',
+	                        'rgba(54, 162, 235, 0.2)',
+	                        'rgba(255, 206, 86, 0.2)',
+	                        'rgba(75, 192, 192, 0.2)',
+	                    ],
+	                    borderColor: [
+	                        'rgba(255, 99, 132, 1)',
+	                        'rgba(54, 162, 235, 1)',
+	                        'rgba(255, 206, 86, 1)',
+	                        'rgba(75, 192, 192, 1)',
+	                        'rgba(153, 102, 255, 1)',
+	                        'rgba(255, 159, 64, 1)',
+	                        'rgba(255, 99, 132, 1)',
+	                        'rgba(54, 162, 235, 1)',
+	                        'rgba(255, 206, 86, 1)',
+	                        'rgba(75, 192, 192, 1)',
+	                    ],
+	                    borderWidth: 1
+	                }]
+	            },
+	            options: {
+	                scales: {
+	                    yAxes: [{
+	                        ticks: {
+	                            beginAtZero: true
+	                        }
+	                    }]
+	                }
+	            }
+	        });
+	    </script>
+
+	    <!--Footer-->
+
+	    <div class="footer">
+			<div class="top">
+				<center><hr size="1" width="95%" color="#fff"></center>
+			</div>
+			
+			<div class="body">
+				<div class="block first">
+					<ul>
+						<li><h2 style="font-size: 26px;">The Trinity</h2></li>
+						<li style="color: #000;"> t</li>
+						<li><a href="#">Autokriti</a></li>
+						<li><a href="#">Team Accelerons</a></li>
+						<li><a href="#">Team Nitrox</a></li>
+					</ul>
+				</div>
+				<div class="block second">
+					<ul>
+						<li><h2 style="font-size: 26px;">Explore</h2></li>
+						<li style="color: #000;">t</li>
+						<li><a href="#">Gallery</a></li>
+						<li><a href="#">Sponsors</a></li>
+						<li><a href="#">Discuss</a></li>
+						<li><a href="#">Articles</a></li>
+						<li><a href="#">Hall of Fame</a></li>
+						<!--<li>Seminars</li>
+						<li>Alumni Talks</li>-->
+					</ul>
+				</div>
+				<div class="block third">
+					<dl>
+						<dt><h2 style="font-size: 26px;">Our Leaders</h2></dt>
+						<dd style="color: #000;">t</dd>
+						<dt class="change">President</dt>
+						<dd>&nbsp;&nbsp;Keshav Vats&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-linkedin-square" aria-hidden="true"></i></dd>
+						<br>
+						<dt class="change"></dt>Vice President</dt>
+						<dd>&nbsp;&nbsp;Ritik Goyal&nbsp;&nbsp;<i class="fa fa-linkedin-square" aria-hidden="true"></i></dd>
+						<br>
+						<dt class="change">Marketing Chairperson</dt>
+						<dd>&nbsp;&nbsp;Pavitra Jain&nbsp;&nbsp;<i class="fa fa-linkedin-square" aria-hidden="true"></i></dd>
+					</dl>
+				</div>
+				<div class="block forth">
+					<ul>
+						<li><h2 style="font-size: 26px;">Contact Us</h2></li>
+						<li style="color: #000;">t</li>
+						<li style="color: #000;">t</li>
+						<li><i class="fa fa-phone" aria-hidden="true"></i> +91 9650735458</li>
+						<li><i class="fa fa-envelope" aria-hidden="true"></i> smthng@gmail.com</li>
+						<li style="color: #000;">t</li>
+						<li style="color: #000;">t</li>
+						<li><i class="fa fa-phone" aria-hidden="true"></i> +91 9250684258</li>
+						<li><i class="fa fa-envelope" aria-hidden="true"></i> nothing@gmail.com</li>
+						<li style="color: #000;">t</li>
+						<li style="color: #000;">t</li>
+						<li><i class="fa fa-phone" aria-hidden="true"></i> +91 8750739808</li>
+						<li><i class="fa fa-envelope" aria-hidden="true"></i> whatever@gmail.com</li>
+					</ul>
+
+				</div>
+			</div>
+
+			<div class="bottom">
+				<i class="fa fa-copyright" aria-hidden="true"></i> 2020 SAE National Institute of Technology, Kurukshetra
+				<div class="creators">
+					Designers and Developers : &nbsp;&nbsp;&nbsp;Amit Rawat &nbsp;&nbsp;&nbsp; <hr size="1" width="" color="#fff"> &nbsp;&nbsp;&nbsp;Arnav Goel
+				</div>
+			</div>
+		</div>
 </body>
 </html>
-
-<!--Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.-->
