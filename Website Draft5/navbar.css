@@ -1,0 +1,47 @@
+@media only screen and(max-width: 600px){.main_tag{padding-top:100px;}}
+nav.navbar,.dropdown-menu {
+	background: rgba(20, 36, 54, 0.5) !important;
+  }
+.app_page.navbar, .app_page .dropdown-menu{
+	background: rgb(3, 3, 8) !important;
+}
+.navbar{padding:0px !important;}
+.nav-item{
+	padding: 10px;
+	text-align: center !important;
+}
+.nav-link{
+	padding-left:15px !important;
+	padding-top:15px !important;
+	padding-right:15px !important;
+}
+.nav-link:hover {
+	color:black !important;
+	background-color: white;
+}
+.nav_login_link{padding-top: 10px !important;}
+.nav_login_link:hover {
+	background-color:black;
+}
+
+.nav-link,.dropdown-item{
+	font-size:18px;
+	color:white !important;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.dropdown-item:hover {
+	color:black !important;
+}
+.navbar-brand{
+	color: white;
+	padding-left: 5%;
+	font-size: 25px;
+}
+.navbar-trans{
+	background:transparent;
+}
+
+.navbar-nav li{
+	padding-top:0px;
+	padding-bottom:0px;
+}

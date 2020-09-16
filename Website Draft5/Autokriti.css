@@ -1,0 +1,132 @@
+/*.can{
+	height: 5vh;
+	width: 100%;
+	background: rgb(2,0,36);
+	background: linear-gradient(90deg, rgba(2,0,36,1) 15%, rgba(52,40,69,1) 42%, rgba(40,51,69,1) 86%);
+
+}
+.header{
+	width: 100%;
+	background: rgb(2,0,36);
+	background: linear-gradient(90deg, rgba(2,0,36,1) 15%, rgba(52,40,69,1) 42%, rgba(40,51,69,1) 86%);
+	color: #fff;
+	font-size: 7rem;
+	text-align: center;
+}
+
+@media (max-width: 434px){
+	.header {
+		font-size: 6rem;
+	}
+}
+
+@media (max-width: 400px){
+	.header p{
+		font-size: 5rem;
+	}
+}
+*/
+.conatinerAuto{
+	width: 100%;
+	height: 100vh;
+	background: url(AutokritiImprovedLogo.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-color: #283345; 
+	z-index: 100;
+}
+.cover{
+	background-color: #000;
+	z-index: 200;
+	width: 100%;
+	height: 100%;
+	opacity: 0.4;
+	position: relative;
+}
+.heading{
+	position: absolute;
+	left: 50%;
+	top: 6%;
+	z-index: 300;
+	color: #fff;
+	transform: translate(-50%,-50%);
+}
+.heading p{
+	font-size: 7rem;
+	opacity: 1;
+}
+
+/*
+@media (max-width: 434px){
+	.heading p{
+		font-size: 6rem;
+	}
+}
+
+@media (max-width: 400px){
+	.heading p{
+		font-size: 5rem;
+	}
+}*/
+
+.infoContainer{
+	height: auto;
+	width: 100%;
+	background: #000;
+}
+.column{
+	display: flex;
+	padding: 2em 4em;
+}
+.what{
+	width: 50%;
+	line-height: 1.5em;
+	text-align: justify;
+	color: #fff;
+	font-size: 1.2em;
+}
+.what p{
+	padding-right: 3em;
+}
+.vid{
+	width: 50%;
+	text-align: right;
+	border-left: solid #aaa 1px;
+}
+
+@media (max-width: 900px){
+	.column{
+		flex-direction: column;
+	}
+	.what{
+		width: 100%;
+		text-align: center;
+	}
+	.what p{
+		padding-right: 0;
+	}
+	.vid{
+		width: 100%;
+		height: 300px;
+		text-align: center;
+		border: none;
+		margin-top: 3em;
+	}
+}
+
+@media screen and (max-width:600px) {
+    .graph{
+      width:100%;
+      align-content: center;
+    }
+    #curve_chart {
+      width:100%; 
+    }
+  }
+
+.graph{
+	width: 80%;
+	margin-left: 10%;
+}
+

@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+   <link rel="dns-prefetch" href="//fonts.gstatic.com">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,500&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@900&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap'>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="app.css">
+</head>
+<body>
+    <!--TITLE-->
+		<div class="team_title_container container">
+			<div class="team_title">
+				<h1 class="team_tag">Team Nitrox</h1>
+			</div>
+		</div>
+        
+
+        {{-- Carousel --}}
+        
+        <div class="carousel_container container " style="justify-content: center;">
+          @if(sizeof($carousel) === 0)
+          <div class="no_carousel mt-4" style="font-size:24px;">No Carousel!</div>
+          @endif
+          @if(sizeof($carousel) > 0)
+          <div id="demo" class="carousel slide   col-xl-8 col-lg-10" data-ride="carousel">
+              <ul class="carousel-indicators">
+                  @for($i = 0 ; $i < sizeof($carousel); $i++)
+                  @if($i === 0)
+                  <li data-target="#demo" data-slide-to="{{$i}}" class="active"></li>
+                  @endif
+                  @if($i > 0)
+                  <li data-target="#demo" data-slide-to="{{$i}}"></li>
+                  @endif
+                  @endfor
+              </ul>
+              <div class="carousel-inner">
+                  @foreach ($carousel as $item)
+                  @if($loop->index === 0)
+                  <div class="carousel-item active">
+                      <img src="{{asset('images/carousel/'.$item->path)}}" alt="{{$item->caption}}" >
+                      <div class="carousel-caption">
+                      <p>{{$item->caption}}</p>
+                      </div>   
+                  </div>
+                  @endif
+                  @if($loop->index > 0)
+                  <div class="carousel-item">
+                      <img src="{{asset('images/carousel/'.$item->path)}}" alt="{{$item->caption}}" >
+                      <div class="carousel-caption">
+                          <p>{{$item->caption}}</p>
+                      </div>   
+                   </div>
+                  @endif
+                  
+                  @endforeach
+              </div>
+              <a class="carousel-control-prev" href="#demo" data-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+              </a>
+              <a class="carousel-control-next" href="#demo" data-slide="next">
+              <span class="carousel-control-next-icon"></span>
+              </a>
+          </div>
+          @endif
+      </div>
+
+
+        {{-- About Us --}}
+        <div class="about_us container py-5">
+            <div class="abs_tag py-3 mt-5 mb-5">ABOUT &nbsp;<font color="#188BA3">US</font></div>
+            <div class="about_us_desc">
+                TEAM NITROX is a student-run techno-managerial team housed within SAE NIT Kurukshetra Collegiate Club. Having extremely meticulous and knowledgeable members, the Team plays a pivotal role in taking SAE NIT kkr, to such grandeur heights. Each year the team design and manufacture an entirely new off-roader right from the scratch to participate in SAE BAJA series. All the varying departments - Designing, Fabrication, Assembly, Testing and Validation, Marketing, come out with their best possible works, whose amalgamation gives an incredible off road buggy. The team laid it’s foundation back in 2010, taking part in two major events namely – ATVC and BAJA SAE. Passionate to build a buggy, whom no stumbling block could hinder, the Team finally bagged 4th position in ENDURANCE run of BAJA SAE’18. To create more space for learning and set the benchmark higher, the Team took a daring decision to take part in one of the world’s toughest championship - BAJA OREGON (USA). There too, the Team performed exceptionally well. Besides this, the Team works studiously hard throughout the year, unaffected by successes or failures, for they have a large vision to chase. 
+            </div>
+        </div>
+
+            {{-- experimentation --}}
+            <div class="container">
+              <div class="acv_tag py-3 mt-3  mb-5">OUR CARS <font color="#188BA3">AND ACHIVEMENTS</font></div>
+          </div>
+          <div id="timeline">
+              <ul id="dates">
+                  @foreach ($acv as $item)
+                  <li><a href="{{'#'.$acv->first()->year}}">{{$acv->first()->year}}</a></li>
+                  @endforeach
+              </ul>
+              <ul id="issues">
+                  @foreach ($acv as $item)
+                  <li id="{{$acv->first()->year}}">
+                  <div class="row">
+                      <div class="team_timeline_img col-md-6" style="height:300px; background-image: url('{{asset('images/nitrox_icon.jpg')}}'); background-size: 100% 100%;"></div>
+                      <div class="team_timeline_details col-md-6">
+                      <div class="team_timeline_general_details">
+                          <div class="checks" onclick="showFunc('{{'#'.$acv->first()->year}}', '.team_timeline_general_details')"><i class="fa fa-plus" aria-hidden="true"></i>&nbsp;General Details</div>
+                          <div class="details_div">
+                          {!!$acv->first()->details!!}
+                          </div>
+                      </div>
+                      <div class="team_timeline_achievements">
+                          <div class="team_timeline_achievements_details">
+                          <div class="checks" onclick="showFunc('{{'#'.$acv->first()->year}}', '.team_timeline_achievements')"><i class="fa fa-plus" aria-hidden="true"></i>&nbsp;Achievements</div>
+                          <div class="details_div">
+                              <div class="comps_part">
+                              <div class="comp_details">
+                                  {!!$acv->first()->achievements!!}
+                              </div>
+                              </div>
+                          </div>
+                          </div>
+                      </div>
+                      <div class="team_timeline_upgrades">
+                          <div class="team_timeline_upgrades_details">
+                          <div class="checks" onclick="showFunc('{{'#'.$acv->first()->year}}', '.team_timeline_upgrades')"><i class="fa fa-plus" aria-hidden="true"></i>&nbsp;Key Upgrades</div>
+                          <div class="details_div">
+                              {!!$acv->first()->upgrades!!}
+                          </div>
+                          </div>
+                      </div>
+                      </div>
+                  </div>
+                  </li>
+                  @endforeach
+              </ul>
+              <div id="grad_left"></div>
+              <div id="grad_right"></div>
+              <a href="#" id="next">+</a>
+              <a href="#" id="prev">-</a>
+          </div>
+
+        {{-- Team members --}}
+
+        <div class="team_mbs container py-3">
+            <div class="abs_tag py-3 mt-5 mb-5">TEAM &nbsp;<font color="#188BA3">MEMBERS</font></div>
+            <div class="mem_gall">
+                {{-- <ul class="ch-grid">
+                  @foreach ($mem as $item)
+                  <li>
+                    <div class="ch-item ch-img-1" style="background-image: url('{{asset('images/team_members/'.$item->path)}}'); background-size: 100% 100%;">
+                      <div class="ch-info">
+                        <h3>{{$item->name}}</h3>
+                        <p>{{$item->designation}}</p>
+                        <p>
+                          @if($item->social != null)
+                            <a href="{{$item->social}}" title="linkedin profile"><i class="fa fa-linkedin-square" aria-hidden="true" style="font-size:24px;"></i></a>
+                          @endif
+                          </p>
+                      </div>
+                    </div>
+                  </li>
+                  @endforeach
+                  </ul> --}}
+                  <div class=" row">
+                    @foreach ($mem as $item)
+                    <div class="col-sm-6 col-lg-4">
+                      <div class="ih-item circle effect3 left_to_right ml-auto mr-auto mt-5">
+                        <a>
+                          <div class="img"><img src="{{asset('images/team_members/'.$item->path)}}" alt="img"></div>
+                          <div class="info">
+                            <h3 style="text-transform: none">{{$item->name}}</h3>
+                            <p>
+                              {{$item->designation}}
+                              <br>
+                              @if($item->social != null)
+                                <a href="{{$item->social}}" title="linkedin profile"><i class="fa fa-linkedin-square" aria-hidden="true" style="font-size:24px;"></i></a>
+                              @endif
+                            </p>
+                          </div>
+                        </a>
+                      </div>
+                  </div>
+                    @endforeach
+                  </div>
+            </div>
+            <button class="btn btn-info mt-5 view_members" style="background-color: #188BA3; color:white;" onclick="viewMembers()">View all team members </button>
+            <button class="btn btn-info mt-5 hide_members" style="background-color: #188BA3; color:white; display:none;" onclick="hideMembers()" >hide team members </button>
+        </div>
+        <script>
+
+            function viewMembers(){
+                document.querySelector('.mem_gall').style.height = 'auto';
+                document.querySelector('.view_members').style.display = 'none';
+                document.querySelector('.hide_members').style.display = 'block';
+            }
+
+            function hideMembers(){
+                document.querySelector('.mem_gall').style.height = '280px';
+                document.querySelector('.view_members').style.display = 'block';
+                document.querySelector('.hide_members').style.display = 'none';
+            }
+
+            $(function(){
+              $().timelinr({
+                  arrowKeys: 'true'
+              })
+            });
+
+
+    $(document ).ready(function() {
+      console.log("ready");
+      $('#issues li').each(function(i)
+      { 
+        $(this).find('.team_timeline_general_details .checks .fa').removeClass('fa-plus');
+        $(this).find('.team_timeline_general_details .checks .fa').addClass('fa-minus');
+        $(this).find('.team_timeline_achievements .details_div').css('max-height', '0px');
+        $(this).find('.team_timeline_upgrades .details_div').css('max-height', '0px');
+        $(this).find('.team_timeline_general_details .details_div').css('max-height', '400px');  
+      });
+    });
+
+    function showFunc(par_id, child_id){
+      $(par_id + ' .team_timeline_general_details .details_div').css('max-height', '0px');
+      $(par_id + ' .team_timeline_achievements .details_div').css('max-height', '0px');
+      $(par_id + ' .team_timeline_upgrades .details_div').css('max-height', '0px');
+
+      if($(par_id + ' .team_timeline_general_details .checks .fa.fa-minus')[0]){
+        $(par_id + ' .team_timeline_general_details .checks .fa').toggleClass('fa-minus');
+        $(par_id + ' .team_timeline_general_details .checks .fa').toggleClass('fa-plus');
+      }
+      else 
+        $(par_id + ' .team_timeline_general_details .checks .fa').addClass('fa-plus');
+      
+      if($(par_id + ' .team_timeline_achievements .checks .fa.fa-minus')[0]){
+      $(par_id + ' .team_timeline_achievements .checks .fa').toggleClass('fa-minus');
+      $(par_id + ' .team_timeline_achievements .checks .fa').toggleClass('fa-plus');
+      }
+      else 
+        $(par_id + ' .team_timeline_achievements .checks .fa').addClass('fa-plus');
+      
+      if($(par_id + ' .team_timeline_upgrades .checks .fa.fa-minus')[0]){
+        $(par_id + ' .team_timeline_upgrades .checks .fa').toggleClass('fa-minus');
+        $(par_id + ' .team_timeline_upgrades .checks .fa').toggleClass('fa-plus');
+      }
+      else 
+        $(par_id + ' .team_timeline_upgrades .checks .fa').addClass('fa-plus');
+
+      //work to do for current clicked tag
+      $(par_id + ' ' + child_id + ' .checks .fa').toggleClass('fa-minus');
+      $(par_id + ' ' + child_id + ' .checks .fa').toggleClass('fa-plus');
+      $(par_id + ' ' + child_id + ' .details_div').css('max-height', '700px');
+      $(par_id + ' ' + child_id + ' .details_div').css('transition', 'all 0.5s ease-in-out');
+      console.log("helo");  
+    }
+
+    jQuery.fn.timelinr = function(options){
+    // default plugin settings
+    settings = jQuery.extend({
+        orientation:                'horizontal',       // value: horizontal | vertical, default to horizontal
+        containerDiv:               '#timeline',        // value: any HTML tag or #id, default to #timeline
+        datesDiv:                   '#dates',           // value: any HTML tag or #id, default to #dates
+        datesSelectedClass:         'selected',         // value: any class, default to selected
+        datesSpeed:                 'normal',           // value: integer between 100 and 1000 (recommended) or 'slow', 'normal' or 'fast'; default to normal
+        issuesDiv:                  '#issues',          // value: any HTML tag or #id, default to #issues
+        issuesSelectedClass:        'selected',         // value: any class, default to selected
+        issuesSpeed:                'fast',             // value: integer between 100 and 1000 (recommended) or 'slow', 'normal' or 'fast'; default to fast
+        issuesTransparency:         0.0,                // value: integer between 0 and 1 (recommended), default to 0.2
+        issuesTransparencySpeed:    500,                // value: integer between 100 and 1000 (recommended), default to 500 (normal)
+        prevButton:                 '#prev',            // value: any HTML tag or #id, default to #prev
+        nextButton:                 '#next',            // value: any HTML tag or #id, default to #next
+        arrowKeys:                  'false',            // value: true | false, default to false
+        startAt:                    1,                  // value: integer, default to 1 (first)
+        autoPlay:                   'false',            // value: true | false, default to false
+        autoPlayDirection:          'forward',          // value: forward | backward, default to forward
+        autoPlayPause:              2000                // value: integer (1000 = 1 seg), default to 2000 (2segs)
+    }, options);
+
+    $(function(){
+        // setting variables... many of them
+        var howManyDates = $(settings.datesDiv+' li').length;
+        var howManyIssues = $(settings.issuesDiv+' li').length;
+        var currentDate = $(settings.datesDiv).find('a.'+settings.datesSelectedClass);
+        var currentIssue = $(settings.issuesDiv).find('li.'+settings.issuesSelectedClass);
+        var widthContainer = $(settings.containerDiv).width();
+        var heightContainer = $(settings.containerDiv).height();
+        var widthIssues = $(settings.issuesDiv).width();
+        var heightIssues = $(settings.issuesDiv).height();
+        var widthIssue = $(settings.issuesDiv+' li').width();
+        var heightIssue = $(settings.issuesDiv+' li').height();
+        var widthDates = $(settings.datesDiv).width();
+        var heightDates = $(settings.datesDiv).height();
+        var widthDate = $(settings.datesDiv+' li').width();
+        var heightDate = $(settings.datesDiv+' li').height();
+        // set positions!
+        if(settings.orientation == 'horizontal') {  
+            $(settings.issuesDiv).width(widthIssue*howManyIssues);
+            $(settings.datesDiv).width(widthDate*howManyDates).css('marginLeft',widthContainer/2-widthDate/2);
+            var defaultPositionDates = parseInt($(settings.datesDiv).css('marginLeft').substring(0,$(settings.datesDiv).css('marginLeft').indexOf('px')));
+        } else if(settings.orientation == 'vertical') {
+            $(settings.issuesDiv).height(heightIssue*howManyIssues);
+            $(settings.datesDiv).height(heightDate*howManyDates).css('marginTop',heightContainer/2-heightDate/2);
+            var defaultPositionDates = parseInt($(settings.datesDiv).css('marginTop').substring(0,$(settings.datesDiv).css('marginTop').indexOf('px')));
+        }
+        
+        $(settings.datesDiv+' a').click(function(event){
+            event.preventDefault();
+            // first vars
+            var whichIssue = $(this).text();
+            var currentIndex = $(this).parent().prevAll().length;
+            // moving the elements
+            if(settings.orientation == 'horizontal') {
+                $(settings.issuesDiv).animate({'marginLeft':-widthIssue*currentIndex},{queue:false, duration:settings.issuesSpeed});
+            } else if(settings.orientation == 'vertical') {
+                $(settings.issuesDiv).animate({'marginTop':-heightIssue*currentIndex},{queue:false, duration:settings.issuesSpeed});
+            }
+            $(settings.issuesDiv+' li').animate({'opacity':settings.issuesTransparency},{queue:false, duration:settings.issuesSpeed}).removeClass(settings.issuesSelectedClass).eq(currentIndex).addClass(settings.issuesSelectedClass).fadeTo(settings.issuesTransparencySpeed,1);
+            // prev/next buttons now disappears on first/last issue | bugfix from 0.9.51: lower than 1 issue hide the arrows | bugfixed: arrows not showing when jumping from first to last date
+            if(howManyDates == 1) {
+                $(settings.prevButton+','+settings.nextButton).fadeOut('fast');
+            } else if(howManyDates == 2) {
+                if($(settings.issuesDiv+' li:first-child').hasClass(settings.issuesSelectedClass)) {
+                    $(settings.prevButton).fadeOut('fast');
+                    $(settings.nextButton).fadeIn('fast');
+                } 
+                else if($(settings.issuesDiv+' li:last-child').hasClass(settings.issuesSelectedClass)) {
+                    $(settings.nextButton).fadeOut('fast');
+                    $(settings.prevButton).fadeIn('fast');
+                }
+            } else {
+                if( $(settings.issuesDiv+' li:first-child').hasClass(settings.issuesSelectedClass) ) {
+                    $(settings.nextButton).fadeIn('fast');
+                    $(settings.prevButton).fadeOut('fast');
+                } 
+                else if( $(settings.issuesDiv+' li:last-child').hasClass(settings.issuesSelectedClass) ) {
+                    $(settings.prevButton).fadeIn('fast');
+                    $(settings.nextButton).fadeOut('fast');
+                }
+                else {
+                    $(settings.nextButton+','+settings.prevButton).fadeIn('slow');
+                }   
+            }
+            // now moving the dates
+            $(settings.datesDiv+' a').removeClass(settings.datesSelectedClass);
+            $(this).addClass(settings.datesSelectedClass);
+            if(settings.orientation == 'horizontal') {
+                $(settings.datesDiv).animate({'marginLeft':defaultPositionDates-(widthDate*currentIndex)},{queue:false, duration:'settings.datesSpeed'});
+            } else if(settings.orientation == 'vertical') {
+                $(settings.datesDiv).animate({'marginTop':defaultPositionDates-(heightDate*currentIndex)},{queue:false, duration:'settings.datesSpeed'});
+            }
+        });
+
+        $(settings.nextButton).bind('click', function(event){
+            event.preventDefault();
+            // bugixed from 0.9.54: now the dates gets centered when there's too much dates.
+            var currentIndex = $(settings.issuesDiv).find('li.'+settings.issuesSelectedClass).index();
+            if(settings.orientation == 'horizontal') {
+                var currentPositionIssues = parseInt($(settings.issuesDiv).css('marginLeft').substring(0,$(settings.issuesDiv).css('marginLeft').indexOf('px')));
+                var currentIssueIndex = currentPositionIssues/widthIssue;
+                var currentPositionDates = parseInt($(settings.datesDiv).css('marginLeft').substring(0,$(settings.datesDiv).css('marginLeft').indexOf('px')));
+                var currentIssueDate = currentPositionDates-widthDate;
+                if(currentPositionIssues <= -(widthIssue*howManyIssues-(widthIssue))) {
+                    $(settings.issuesDiv).stop();
+                    $(settings.datesDiv+' li:last-child a').click();
+                } else {
+                    if (!$(settings.issuesDiv).is(':animated')) {
+                        // bugixed from 0.9.52: now the dates gets centered when there's too much dates.
+                        $(settings.datesDiv+' li').eq(currentIndex+1).find('a').trigger('click');
+                    }
+                }
+            } else if(settings.orientation == 'vertical') {
+                var currentPositionIssues = parseInt($(settings.issuesDiv).css('marginTop').substring(0,$(settings.issuesDiv).css('marginTop').indexOf('px')));
+                var currentIssueIndex = currentPositionIssues/heightIssue;
+                var currentPositionDates = parseInt($(settings.datesDiv).css('marginTop').substring(0,$(settings.datesDiv).css('marginTop').indexOf('px')));
+                var currentIssueDate = currentPositionDates-heightDate;
+                if(currentPositionIssues <= -(heightIssue*howManyIssues-(heightIssue))) {
+                    $(settings.issuesDiv).stop();
+                    $(settings.datesDiv+' li:last-child a').click();
+                } else {
+                    if (!$(settings.issuesDiv).is(':animated')) {
+                        // bugixed from 0.9.54: now the dates gets centered when there's too much dates.
+                        $(settings.datesDiv+' li').eq(currentIndex+1).find('a').trigger('click');
+                    }
+                }
+            }
+            // prev/next buttons now disappears on first/last issue | bugfix from 0.9.51: lower than 1 issue hide the arrows
+            if(howManyDates == 1) {
+                $(settings.prevButton+','+settings.nextButton).fadeOut('fast');
+            } else if(howManyDates == 2) {
+                if($(settings.issuesDiv+' li:first-child').hasClass(settings.issuesSelectedClass)) {
+                    $(settings.prevButton).fadeOut('fast');
+                    $(settings.nextButton).fadeIn('fast');
+                } 
+                else if($(settings.issuesDiv+' li:last-child').hasClass(settings.issuesSelectedClass)) {
+                    $(settings.nextButton).fadeOut('fast');
+                    $(settings.prevButton).fadeIn('fast');
+                }
+            } else {
+                if( $(settings.issuesDiv+' li:first-child').hasClass(settings.issuesSelectedClass) ) {
+                    $(settings.prevButton).fadeOut('fast');
+                } 
+                else if( $(settings.issuesDiv+' li:last-child').hasClass(settings.issuesSelectedClass) ) {
+                    $(settings.nextButton).fadeOut('fast');
+                }
+                else {
+                    $(settings.nextButton+','+settings.prevButton).fadeIn('slow');
+                }   
+            }
+        });
+
+        $(settings.prevButton).click(function(event){
+            event.preventDefault();
+            // bugixed from 0.9.54: now the dates gets centered when there's too much dates.
+            var currentIndex = $(settings.issuesDiv).find('li.'+settings.issuesSelectedClass).index();
+            if(settings.orientation == 'horizontal') {
+                var currentPositionIssues = parseInt($(settings.issuesDiv).css('marginLeft').substring(0,$(settings.issuesDiv).css('marginLeft').indexOf('px')));
+                var currentIssueIndex = currentPositionIssues/widthIssue;
+                var currentPositionDates = parseInt($(settings.datesDiv).css('marginLeft').substring(0,$(settings.datesDiv).css('marginLeft').indexOf('px')));
+                var currentIssueDate = currentPositionDates+widthDate;
+                if(currentPositionIssues >= 0) {
+                    $(settings.issuesDiv).stop();
+                    $(settings.datesDiv+' li:first-child a').click();
+                } else {
+                    if (!$(settings.issuesDiv).is(':animated')) {
+                        // bugixed from 0.9.54: now the dates gets centered when there's too much dates.
+                        $(settings.datesDiv+' li').eq(currentIndex-1).find('a').trigger('click');
+                    }
+                }
+            } else if(settings.orientation == 'vertical') {
+                var currentPositionIssues = parseInt($(settings.issuesDiv).css('marginTop').substring(0,$(settings.issuesDiv).css('marginTop').indexOf('px')));
+                var currentIssueIndex = currentPositionIssues/heightIssue;
+                var currentPositionDates = parseInt($(settings.datesDiv).css('marginTop').substring(0,$(settings.datesDiv).css('marginTop').indexOf('px')));
+                var currentIssueDate = currentPositionDates+heightDate;
+                if(currentPositionIssues >= 0) {
+                    $(settings.issuesDiv).stop();
+                    $(settings.datesDiv+' li:first-child a').click();
+                } else {
+                    if (!$(settings.issuesDiv).is(':animated')) {
+                        // bugixed from 0.9.54: now the dates gets centered when there's too much dates.
+                        $(settings.datesDiv+' li').eq(currentIndex-1).find('a').trigger('click');
+                    }
+                }
+            }
+            // prev/next buttons now disappears on first/last issue | bugfix from 0.9.51: lower than 1 issue hide the arrows
+            if(howManyDates == 1) {
+                $(settings.prevButton+','+settings.nextButton).fadeOut('fast');
+            } else if(howManyDates == 2) {
+                if($(settings.issuesDiv+' li:first-child').hasClass(settings.issuesSelectedClass)) {
+                    $(settings.prevButton).fadeOut('fast');
+                    $(settings.nextButton).fadeIn('fast');
+                } 
+                else if($(settings.issuesDiv+' li:last-child').hasClass(settings.issuesSelectedClass)) {
+                    $(settings.nextButton).fadeOut('fast');
+                    $(settings.prevButton).fadeIn('fast');
+                }
+            } else {
+                if( $(settings.issuesDiv+' li:first-child').hasClass(settings.issuesSelectedClass) ) {
+                    $(settings.prevButton).fadeOut('fast');
+                } 
+                else if( $(settings.issuesDiv+' li:last-child').hasClass(settings.issuesSelectedClass) ) {
+                    $(settings.nextButton).fadeOut('fast');
+                }
+                else {
+                    $(settings.nextButton+','+settings.prevButton).fadeIn('slow');
+                }   
+            }
+        });
+        // keyboard navigation, added since 0.9.1
+        if(settings.arrowKeys=='true') {
+            if(settings.orientation=='horizontal') {
+                $(document).keydown(function(event){
+                    if (event.keyCode == 39) { 
+                       $(settings.nextButton).click();
+                    }
+                    if (event.keyCode == 37) { 
+                       $(settings.prevButton).click();
+                    }
+                });
+            } else if(settings.orientation=='vertical') {
+                $(document).keydown(function(event){
+                    if (event.keyCode == 40) { 
+                       $(settings.nextButton).click();
+                    }
+                    if (event.keyCode == 38) { 
+                       $(settings.prevButton).click();
+                    }
+                });
+            }
+        }
+        // default position startAt, added since 0.9.3
+        $(settings.datesDiv+' li').eq(settings.startAt-1).find('a').trigger('click');
+        // autoPlay, added since 0.9.4
+        if(settings.autoPlay == 'true') { 
+            setInterval("autoPlay()", settings.autoPlayPause);
+        }
+    });
+};
+
+  // autoPlay, added since 0.9.4
+  function autoPlay(){
+      var currentDate = $(settings.datesDiv).find('a.'+settings.datesSelectedClass);
+      if(settings.autoPlayDirection == 'forward') {
+          if(currentDate.parent().is('li:last-child')) {
+              $(settings.datesDiv+' li:first-child').find('a').trigger('click');
+          } else {
+              currentDate.parent().next().find('a').trigger('click');
+          }
+      } else if(settings.autoPlayDirection == 'backward') {
+          if(currentDate.parent().is('li:first-child')) {
+              $(settings.datesDiv+' li:last-child').find('a').trigger('click');
+          } else {
+              currentDate.parent().prev().find('a').trigger('click');
+          }
+      }
+  }
+        </script>
+
+
+</body>
+</html>
