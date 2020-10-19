@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!--ADDONS-->
+
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <link href='https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap'>
+    <link href='https://fonts.googleapis.com/css?family=Raleway:300' rel='stylesheet' type='text/css'>
+
+
+	<!--ADDONS-->
+	<title>Team Nitrox</title>
+	<link rel="stylesheet" type="text/css" href="navbar.css">
+	<link rel="stylesheet" type="text/css" href="TeamNitrox.css">
+	<link rel="stylesheet" type="text/css" href="honeycomb.css">
+   	<link rel="stylesheet" type="text/css" href="FooterReponsive.css">	
+
+</head>
+<body>
+	<!--NAV START-->
+
+	<div class="premain">
+	<div class="main">
+		<nav class="navbar homepage navbar-expand-md navbar-trans navbar-dark fixed-top">
+			<a class="navbar-brand" href="{{url('/home')}}">SAE<font color="#188BA3">NITKKR</font></a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon" style="color:white;"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNavDropdown">
+			<ul class="navbar-nav ml-auto">
+                <!-- Authentication Links -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Teams
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="{{url('/accelerons')}}">Accelerons</a>
+                    <a class="dropdown-item" href="{{url('/nitrox')}}">Nitrox</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuEvents" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Events
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuEvents">
+                    <a class="dropdown-item" href="{{url('/events/autokriti')}}">Autokriti</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ route('discuss') }}">Discuss</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url('/blogs') }}">Articles</a>
+				</li>
+				<li class="nav-item">
+                    <a class="nav-link" href="{{ url('/sponsors') }}">Sponsors</a>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					Others
+					</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+					<a class="dropdown-item" href="{{url('/gallery')}}">Gallery</a>
+					</div>
+				</li>
+                <li class="nav-item">
+                    <a class="nav-link  nav_login_link" href="{{ route('login') }}"><button class="btn btn-outline-warning">Login</button></a>
+                </li>
+			</ul>
+			</div>
+        </nav>
+
+	<!--NAV END-->
+
+	<!--Main Body-->
+
+	<div class="nitrox-heading">
+		<div class="nitrox-heading layer">
+			<div class="content">
+				<center>
+					<h1>Team Nitrox</h1><br>
+					<p style="font-size: 1em;">TEAM NITROX is a group  of junkies with a shared objective to create a fierce beast of an  ATV(  All-terrain vehicle).  The  team  was  founded back in  2010  under  SAE NIT  KURUKSHETRA.  Since  its  foundation,  the  team  has  grown  in  all  aspects,  be  it  technical,  or competitive.  From  one  of  the  few  teams  that  design  its  own  CVT  to  representing  the  country  in BAJA  SAE  Illinois,  the  team  has  repeatedly  provided  evidence  of  its  exceptional  growth.  Till date,  NITROX's  offroader  has  shown  its  grip  in  the  following  competitions:<br>
+					BAJA  SAE  INDIA <br>
+					ATVC <br>
+					BAJA  SAE  USA <br>
+					With  10  years  of  experience  with  us,  we  are  all set to add  more  gems  to  our  decade long  legacy.</p>
+				</center>
+			</div>
+		</div>
+	</div>
+
+	<!--Cars At A Glance-->
+
+	<div class="carsataglance">
+		<div class="heading">
+			<center>
+				<h3><span style="color: #fff;">Cars At</span><span style="color: #188BA3;"> A Glance</span></h3>
+			</center>
+		</div>
+		<div class="carsataglance-container">
+			<div class="info" id="info">
+			</div>
+		</div>
+	</div>
+
+	<!--END Cars At A Glance-->
+
+	<!--Team Members----------------------------------------------------------------------------------------------------------------->
+
+	<div class="teamHeading">
+		<div class="heading">
+			<center>
+				<h3><span style="color: #fff;">Team</span><span style="color: #188BA3;"> Members</span></h3>
+			</center>
+		</div>
+	</div>
+	<div class="ourteam">
+		<ul id="hexGrid">
+	      <li class="hex">
+	        <div class="hexIn">
+	          <a class="hexLink" href="#">
+	            <img src="C:\Users\Dell-pc\Documents\SAE\Website(GitHub)\Website Draft5\4th year\4th year\Nitox_KeshavVats.jpg" alt="" />
+	            <h1>Keshav Vats <br> President</h1>
+	            <p>
+	            	<span onclick="window.open('https://www.linkedin.com/in/ritik-goyal-bab617165/')">Linked &nbsp;<i class="fa fa-linkedin-square" aria-hidden="true"></i></span>	<br>
+	            </p>
+	          </a>
+	        </div>
+	      </li>
+	      <li class="hex">
+	        <div class="hexIn">
+	          <a class="hexLink" href="#">
+	            <img src="C:\Users\Dell-pc\Documents\SAE\Website(GitHub)\Website Draft5\4th year\4th year\Nitrox_DhruvSinghal.jpg" alt="" />
+	            <h1>Dhruv Singhal <br> Suspension and Steering</h1>
+	            <p>
+	            	<span onclick="window.open('')">Linked &nbsp;<i class="fa fa-linkedin-square" aria-hidden="true"></i></span>	<br>
+	            </p>
+	          </a>
+	        </div>
+	      </li>
+	      <li class="hex">
+	        <div class="hexIn">
+	          <a class="hexLink" href="#">
+	            <img src="C:\Users\Dell-pc\Documents\SAE\Website(GitHub)\Website Draft5\4th year\4th year\Nitrox_KartikJaglan.jpg" alt="" />
+	            <h1>Kartik Jaglan <br> Transmission</h1>
+	            <p>
+	            	<span onclick="window.open('https://www.linkedin.com/in/jkartik7/')">Linked &nbsp;<i class="fa fa-linkedin-square" aria-hidden="true"></i></span>
+	            </p>
+	          </a>
+	        </div>
+	      </li>
+	      <li class="hex">
+	        <div class="hexIn">
+	          <a class="hexLink" href="#">
+	            <img src="C:\Users\Dell-pc\Documents\SAE\Website(GitHub)\Website Draft5\4th year\4th year\Nitrox_PavitraJain.jpg" alt="" />
+	            <h1>Pavitra Jain <br> Vehicle Dynamics</h1>
+	            <p>
+	            	<span onclick="window.open('https://www.linkedin.com/in/pavitra-jain-57b715165')">Linked &nbsp;<i class="fa fa-linkedin-square" aria-hidden="true"></i></span><br>
+	            </p>
+	          </a>
+	        </div>
+	      </li>
+	      <li class="hex">
+	        <div class="hexIn">
+	          <a class="hexLink" href="#">
+	            <img src="C:\Users\Dell-pc\Documents\SAE\Website(GitHub)\Website Draft5\4th year\4th year\Nitrox_PrasoonMishra.jpg" alt="" />
+	            <h1>Prasoon Mishra <br> Transmission </h1>
+	            <p>
+	            	<span onclick="window.open('')">Linked &nbsp;<i class="fa fa-linkedin-square" aria-hidden="true"></i></span><br>
+	            </p>
+	          </a>
+	        </div>
+	      </li>
+	      <li class="hex">
+	        <div class="hexIn">
+	          <a class="hexLink" href="#">
+	            <img src="C:\Users\Dell-pc\Documents\SAE\Website(GitHub)\Website Draft5\4th year\4th year\Nitrox_SanskarGarg.jpg" alt="" />
+	            <h1>Sanskar Garg <br> Transmission</h1>
+	            <p>
+	            	<span onclick="window.open('')">Linked &nbsp;<i class="fa fa-linkedin-square" aria-hidden="true"></i></span><br>
+	            </p>
+	          </a>
+	        </div>
+	      </li>
+	      <li class="hex">
+	        <div class="hexIn">
+	          <a class="hexLink" href="#">
+	            <img src="C:\Users\Dell-pc\Documents\SAE\Website(GitHub)\Website Draft5\4th year\4th year\Nitrox_VedPrakash.jpg" alt="" />
+	            <h1>Ved Prakash <br> Brakes</h1>
+	            <p>
+	            	<span onclick="window.open('https://www.linkedin.com/in/yogita-sangwan-5813a4180')">Linked &nbsp;<i class="fa fa-linkedin-square" aria-hidden="true"></i></span><br>
+	            </p>
+	          </a>
+	        </div>
+	      </li>
+	      
+	      <!--3rd Year-->
+
+	      <li class="hex">
+	        <div class="hexIn">
+	          <a class="hexLink" href="#">
+	            <img src="C:\Users\Dell-pc\Documents\SAE\Website(GitHub)\Website Draft5\3rd year\3rd year\Nitrox_DeepakYadav.jpg" alt="" />
+	            <h1>Deepak Yadav <br> Transmission</h1>
+	            <p>
+	            	<span onclick="window.open('https://www.linkedin.com/in/deepak-yadav-48410a185')">Linked &nbsp;<i class="fa fa-linkedin-square" aria-hidden="true"></i></span>	<br>
+	            </p>
+	          </a>
+	        </div>
+	      </li>
+	      <li class="hex">
+	        <div class="hexIn">
+	          <a class="hexLink" href="#">
+	            <img src="C:\Users\Dell-pc\Documents\SAE\Website(GitHub)\Website Draft5\3rd year\3rd year\Nitrox_ParasAggarwal.png" alt="" />
+	            <h1>Paras Aggarwal <br> Vehicle Dynamics</h1>
+	            <p>
+	            	<span onclick="window.open('https://www.linkedin.com/in/paras-aggarwal-9a8368188')">Linked &nbsp;<i class="fa fa-linkedin-square" aria-hidden="true"></i></span>	<br>
+	            </p>
+	          </a>
+	        </div>
+	      </li>
+	      <li class="hex">
+	        <div class="hexIn">
+	          <a class="hexLink" href="#">
+	            <img src="C:\Users\Dell-pc\Documents\SAE\Website(GitHub)\Website Draft5\3rd year\3rd year\Nitrox_TanviGoel.jpg" alt="" />
+	            <h1>Tanvi Goel <br> Brakes</h1>
+	            <p>
+	            	<span onclick="window.open('')">Linked &nbsp;<i class="fa fa-linkedin-square" aria-hidden="true"></i></span>	<br>
+	            </p>
+	          </a>
+	        </div>
+	      </li>
+	      <li class="hex">
+	        <div class="hexIn">
+	          <a class="hexLink" href="#">
+	            <img src="C:\Users\Dell-pc\Documents\SAE\Website(GitHub)\Website Draft5\3rd year\3rd year\Nitrox_UditTripathi.jpg" alt="" />
+	            <h1>Udit Tripathi <br> Vehicle Dynamics</h1>
+	            <p>
+	            	<span onclick="window.open('www.linkedin.com/in/udit-tripathi-265104174')">Linked &nbsp;<i class="fa fa-linkedin-square" aria-hidden="true"></i></span>	<br>
+	            </p>
+	          </a>
+	        </div>
+	      </li>
+	      <li class="hex">
+	        <div class="hexIn">
+	          <a class="hexLink" href="#">
+	            <img src="C:\Users\Dell-pc\Documents\SAE\Website(GitHub)\Website Draft5\3rd year\3rd year\Nitrox_VishwasSheoran.jpg" alt="" />
+	            <h1>Vishwas Sheoran <br> Power Train</h1>
+	            <p>
+	            	<span onclick="window.open('https://www.linkedin.com/in/vishwas-sheoran-59337118a')">Linked &nbsp;<i class="fa fa-linkedin-square" aria-hidden="true"></i></span>	<br>
+	            </p>
+	          </a>
+	        </div>
+	      </li>
+
+	      <!--2nd Year-->
+
+	      <li class="hex">
+	        <div class="hexIn">
+	          <a class="hexLink" href="#">
+	            <img src="C:\Users\Dell-pc\Documents\SAE\Website(GitHub)\Website Draft5\2nd year\2nd year\Nitrox_AdarshKumarVishwakarma.jpg" alt="" />
+	            <h1>Adarsh Kumar Vishwakarma <br> Mechanical</h1>
+	            <p>
+	            	<span onclick="window.open('')">Linked &nbsp;<i class="fa fa-linkedin-square" aria-hidden="true"></i></span>
+	            </p>
+	          </a>
+	        </div>
+	      </li>
+	      <li class="hex">
+	        <div class="hexIn">
+	          <a class="hexLink" href="#">
+	            <img src="C:\Users\Dell-pc\Documents\SAE\Website(GitHub)\Website Draft5\2nd year\2nd year\Nitrox_Apurva.jpg" alt="" />
+	            <h1>Apurva <br> Production and Industrial engineering </h1>
+	            <p>
+	            	<span onclick="window.open('')">Linked &nbsp;<i class="fa fa-linkedin-square" aria-hidden="true"></i></span>
+	            </p>
+	          </a>
+	        </div>
+	      </li>
+	      <li class="hex">
+	        <div class="hexIn">
+	          <a class="hexLink" href="#">
+	            <img src="C:\Users\Dell-pc\Documents\SAE\Website(GitHub)\Website Draft5\2nd year\2nd year\Nitrox_Ashwani.jpg" alt="" />
+	            <h1>Ashwani <br> Mechanical</h1>
+	            <p>
+	            	<span onclick="window.open('')">Linked &nbsp;<i class="fa fa-linkedin-square" aria-hidden="true"></i></span>
+	            </p>
+	          </a>
+	        </div>
+	      </li>
+	      <li class="hex">
+	        <div class="hexIn">
+	          <a class="hexLink" href="#">
+	            <img src="C:\Users\Dell-pc\Documents\SAE\Website(GitHub)\Website Draft5\2nd year\2nd year\Nitrox_GouravBhaker.jpg" alt="" />
+	            <h1>Gourav Bhaker <br> Brakes</h1>
+	            <p>
+	            	<span onclick="window.open('')">Linked &nbsp;<i class="fa fa-linkedin-square" aria-hidden="true"></i></span>
+	            </p>
+	          </a>
+	        </div>
+	      </li>
+	      <li class="hex">
+	        <div class="hexIn">
+	          <a class="hexLink" href="#">
+	            <img src="C:\Users\Dell-pc\Documents\SAE\Website(GitHub)\Website Draft5\2nd year\2nd year\Nitrox_KaushalPrajapati.jpg" alt="" />
+	            <h1>Kaushal Prajapati <br> Transmission</h1>
+	            <p>
+	            	<span onclick="window.open('')">Linked &nbsp;<i class="fa fa-linkedin-square" aria-hidden="true"></i></span>
+	            </p>
+	          </a>
+	        </div>
+	      </li>
+	      <li class="hex">
+	        <div class="hexIn">
+	          <a class="hexLink" href="#">
+	            <img src="C:\Users\Dell-pc\Documents\SAE\Website(GitHub)\Website Draft5\2nd year\2nd year\Nitrox_MukeshKumar.jpg" alt="" />
+	            <h1>Mukesh Kumar <br> Transmission </h1>
+	            <p>
+	            	<span onclick="window.open('')">Linked &nbsp;<i class="fa fa-linkedin-square" aria-hidden="true"></i></span>
+	            </p>
+	          </a>
+	        </div>
+	      </li>
+	      <li class="hex">
+	        <div class="hexIn">
+	          <a class="hexLink" href="#">
+	            <img src="C:\Users\Dell-pc\Documents\SAE\Website(GitHub)\Website Draft5\2nd year\2nd year\Nitrox_PiyushSaini.jpg" alt="" />
+	            <h1>Piyush Saini <br> Brakes</h1>
+	            <p>
+	            	<span onclick="window.open('https://www.linkedin.com/in/piyush-saini-b584751a0')">Linked &nbsp;<i class="fa fa-linkedin-square" aria-hidden="true"></i></span>	<br>
+	            </p>
+	          </a>
+	        </div>
+	      </li>
+	      <li class="hex">
+	        <div class="hexIn">
+	          <a class="hexLink" href="#">
+	            <img src="C:\Users\Dell-pc\Documents\SAE\Website(GitHub)\Website Draft5\2nd year\2nd year\Nitrox_PrashantYadav.jpg" alt="" />
+	            <h1>Prashant Yadav <br> Vehicle Dynamics</h1>
+	            <p>
+	            	<span onclick="window.open('https://www.linkedin.com/in/prashant-yadav-aa25181ab')">Linked &nbsp;<i class="fa fa-linkedin-square" aria-hidden="true"></i></span>	<br>
+	            </p>
+	          </a>
+	        </div>
+	      </li>
+	      <li class="hex">
+	        <div class="hexIn">
+	          <a class="hexLink" href="#">
+	            <img src="C:\Users\Dell-pc\Documents\SAE\Website(GitHub)\Website Draft5\2nd year\2nd year\Nitrox_PriyankaGupta.jpg" alt="" />
+	            <h1>Priyanka Gupta <br> Brakes</h1>
+	            <p>
+	            	<span onclick="window.open('https://www.linkedin.com/in/priyanka-gupta-9043211ab')">Linked &nbsp;<i class="fa fa-linkedin-square" aria-hidden="true"></i></span>	<br>
+	            </p>
+	          </a>
+	        </div>
+	      </li>
+	      <li class="hex">
+	        <div class="hexIn">
+	          <a class="hexLink" href="#">
+	            <img src="C:\Users\Dell-pc\Documents\SAE\Website(GitHub)\Website Draft5\2nd year\2nd year\Nitrox_SaeedUlKhair.jpg" alt="" />
+	            <h1>Saeed Ul Khair <br> Transmission</h1>
+	            <p>
+	            	<span onclick="window.open('')">Linked &nbsp;<i class="fa fa-linkedin-square" aria-hidden="true"></i></span>
+	            </p>
+	          </a>
+	        </div>
+	      </li>
+	      <li class="hex">
+	        <div class="hexIn">
+	          <a class="hexLink" href="#">
+	            <img src="C:\Users\Dell-pc\Documents\SAE\Website(GitHub)\Website Draft5\2nd year\2nd year\Nitrox_Sahil yadav.jpg" alt="" />
+	            <h1>Sahil Yadav <br> Brakes</h1>
+	            <p>
+	            	<span onclick="window.open('')">Linked &nbsp;<i class="fa fa-linkedin-square" aria-hidden="true"></i></span>
+	            </p>
+	          </a>
+	        </div>
+	      </li>
+	      <li class="hex">
+	        <div class="hexIn">
+	          <a class="hexLink" href="#">
+	            <img src="C:\Users\Dell-pc\Documents\SAE\Website(GitHub)\Website Draft5\2nd year\2nd year\Nitrox_SahilKharb.jpg" alt="" />
+	            <h1>Sahil Kharb <br> Transmission</h1>
+	            <p>
+	            	<span onclick="window.open('')">Linked &nbsp;<i class="fa fa-linkedin-square" aria-hidden="true"></i></span>
+	            </p>
+	          </a>
+	        </div>
+	      </li>
+	      <li class="hex">
+	        <div class="hexIn">
+	          <a class="hexLink" href="#">
+	            <img src="C:\Users\Dell-pc\Documents\SAE\Website(GitHub)\Website Draft5\2nd year\2nd year\Accelerons_TusharGoyal.jpg" alt="" />
+	            <h1>Tushar Goyal <br> Aerodynamics</h1>
+	            <p>
+	            	<span onclick="window.open('https://www.linkedin.com/in/tushar-goyal-8749221a0')">Linked &nbsp;<i class="fa fa-linkedin-square" aria-hidden="true"></i></span>	<br>
+	            </p>
+	          </a>
+	        </div>
+	      </li>
+	      <li class="hex">
+	        <div class="hexIn">
+	          <a class="hexLink" href="#">
+	            <img src="C:\Users\Dell-pc\Documents\SAE\Website(GitHub)\Website Draft5\2nd year\2nd year\Nitrox_SakshiRani.jpg" alt="" />
+	            <h1>Sakhsi Rani <br> Vehicle Dynamics</h1>
+	            <p>
+	            	<span onclick="window.open('')">Linked &nbsp;<i class="fa fa-linkedin-square" aria-hidden="true"></i></span>
+	            </p>
+	          </a>
+	        </div>
+	      </li>  
+	      <li class="hex">
+	        <div class="hexIn">
+	          <a class="hexLink" href="#">
+	            <img src="C:\Users\Dell-pc\Documents\SAE\Website(GitHub)\Website Draft5\2nd year\2nd year\Nitrox_Tarun.jpg" alt="" />
+	            <h1>Tarun Kumar <br> Vehicle Dynamics</h1>
+	            <p>
+	            	<span onclick="window.open('https://www.linkedin.com/in/tarun-kumar-4b53751ab')">Linked &nbsp;<i class="fa fa-linkedin-square" aria-hidden="true"></i></span>	<br>
+	            </p>
+	          </a>
+	        </div>
+	      </li>
+	      <li class="hex">
+	        <div class="hexIn">
+	          <a class="hexLink" href="#">
+	            <img src="C:\Users\Dell-pc\Documents\SAE\Website(GitHub)\Website Draft5\2nd year\2nd year\Nitrox_UditRai.jpg" alt="" />
+	            <h1>Udit Rai <br> Vehicle Dynamics</h1>
+	            <p>
+	            	<span onclick="window.open('')">Linked &nbsp;<i class="fa fa-linkedin-square" aria-hidden="true"></i></span>
+	            </p>
+	          </a>
+	        </div>
+	      </li>    
+	    </ul>
+    </div>
+
+	<!--END Team Members------------------------------------------------------------------------------------------------------------->
+	
+	<!--End Main Body-->
+
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script type="text/javascript">
+	    var images = ["abt.jpg", "backgrounddraft.jpg", "Logo_Tp.png", "ContactBg.png", "abt.jpg", "backgrounddraft.jpg"];
+
+	    $(function () {
+	        var i = 0;
+	        $("#info").css("background-image", "url(" + images[i] + ")");
+	        setInterval(function () {
+	            i++;
+	            if (i == images.length) {
+	                i = 0;
+	            }
+	            $("#info").fadeOut("slow", function () {
+	                $(this).css("background-image", "url(" + images[i] + ")");
+	                $(this).fadeIn("slow");
+	                console.log("This");
+	            });
+	        }, 5000);
+	    });
+	</script>
+
+	<!--Footer-->	
+	<div class="pre-footer">
+		<hr style="width: 100%; color: #fff; background-color: #fff;">
+	</div>
+
+	<div class="footer">
+		<div class="footercolmain">
+			<div class="col1">
+				<div class="col1 trinity content">
+					<ul>
+						<li id = "footerheading"><h2 style="font-size: 26px;">The Trinity</h2></li>
+						<li style="color: #000;"> t</li>
+						<li><a href="/events/autokriti">Autokriti</a></li>
+						<li><a href="/accelerons">Team Accelerons</a></li>
+						<li><a href="/nitrox">Team Nitrox</a></li>
+					</ul>
+				</div>
+
+				<div class="col2 explore content">
+					<ul>
+						<li id = "footerheading"><h2 style="font-size: 26px;">Explore</h2></li>
+						<li style="color: #000;">t</li>
+						<li><a href="/gallery">Gallery</a></li>
+						<li><a href="/sponsors">Sponsors</a></li>
+						<li><a href="/discuss">Discuss</a></li>
+						<li><a href="/blogs">Articles</a></li>
+						<li><a href="/hall_of_fame">Hall of Fame</a></li>
+						<li><a href="/support">Support Us</a></li>
+					</ul>
+				</div>	
+			</div>
+
+			<div class="col2">
+				<div class="col2 leaders content">
+					<dl>
+						<dt id = "footerheading"><h2 style="font-size: 26px;">Our Leaders</h2></dt>
+						<dd style="color: #000;">t</dd>
+						<dt class="change">President</dt>
+						<dd>&nbsp;&nbsp;<a href="https://www.linkedin.com/in/keshav-vats-07b624167" target="_blank">Keshav Vats  <i class="fa fa-linkedin-square" aria-hidden="true"></i></a></dd>
+					
+						<dt class="change"></dt>Vice President</dt>
+						<dd>&nbsp;&nbsp;<a href="www.linkedin.com/in/ritik-goyal-bab617165/" target="_blank"> Ritik Goyal <i class="fa fa-linkedin-square" aria-hidden="true"></i></a></dd>
+						
+						<dt class="change">Marketing Chairperson</dt>
+						<dd>&nbsp;&nbsp;<a href="https://www.linkedin.com/in/pavitra-jain-57b715165" target="_blank">Pavitra Jain  <i class="fa fa-linkedin-square" aria-hidden="true"></i></a></dd>
+					</dl>
+				</div>
+				<div class="col2 footercontact content">
+					<ul>
+						<li id = "footerheading"><h2 style="font-size: 26px;">Contact Us</h2></li>
+						<li style="color: #000;">t</li>
+						<li><i class="fa fa-phone" aria-hidden="true"></i> +91 7999991375</li>
+						<li><a href="mailto:smthng@gmail.com   " target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i> &nbsp;saenitkurukshetra@gmail.com</a></li>
+						<li style="color: #000;">t</li>
+						<li><i class="fa fa-phone" aria-hidden="true"></i> +91 8053225178</li>
+						<li><a href="https://mail.google.com/mail/u/0/?tab=km1#inbox?compose=new" target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i> &nbsp;acceleronsnitkkr@gmail.com</a></li>
+						<li style="color: #000;">t</li>
+						<li><i class="fa fa-phone" aria-hidden="true"></i> +91 7082640201</li>
+						<li><a href="https://mail.google.com/mail/u/0/?tab=km1#inbox?compose=new" target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i> &nbsp;nitroxkkr@gmail.com</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="post-footer">
+		<center>
+			<div class="copyright"><i class="fa fa-copyright" aria-hidden="true" style="padding-top: 0.7%;"></i>  2020 SAE National Institute of Technology, Kurukshetra    
+	        </div>
+			<div class="developers">
+				<ul>Designers and Developers:
+					<li>Arnav Goel</li>
+					<li>Amit Rawat</li>
+					<li>Yogita Sangwan</li>
+				</ul>
+			</div>
+		</center>
+	</div>
+</body>
+</html>

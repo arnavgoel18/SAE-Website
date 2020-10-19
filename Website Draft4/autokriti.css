@@ -42,6 +42,34 @@
 	transform: rotate(90deg);
 }
 
+/*Heading*/
+
+.heading-back{
+	height: 90vh;
+	background: url('AutokritiImprovedLogo.jpg');
+	background-position: center;
+	background-size: contain;
+	z-index: 1;
+	position: relative;
+	background-repeat: no-repeat;
+	opacity: 2;
+}
+.heading-container{
+	height: 90vh;
+	width: 100%;
+	z-index: -1;
+	position: relative;
+	background-color: #283345;
+	opacity: 1;
+}	
+.heading-content{
+	z-index: 3;
+	background: #000;
+	height: 90vh;
+	width: 100%;
+	opacity: 0.15;
+}
+
 /*About*/
 
 .about{
@@ -114,6 +142,7 @@
 
 .container{
 	height: 500px;
+	position: relative;
 }
 
 #myCarousel{

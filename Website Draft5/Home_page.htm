@@ -6,14 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8">
 
-   
+   	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"><!--OneoftheBootStrapIcons-->
 	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap'>
-
+   	<link rel="stylesheet" type="text/css" href="FooterReponsive.css">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" type="text/css" href="ihover.css">
     <script>
@@ -205,95 +205,86 @@
             </div>
         </div>    
     </div>
-	<!--Footer-->	 
-	<div class="footer">
-		<div class="top" style="width:90%; margin-left:5%;">
-			
-		</div>
-		
-		<div class="footer_body row justify-content-center ">
-			<div class="block first col-lg-3 col-6">
-				<ul>
-					<li><h2 style="font-size: 26px;">The Trinity</h2></li>
-					<li style="color: #000;"> t</li>
-					<li><a href="/events/autokriti">Autokriti</a></li>
-					<li><a href="/accelerons">Team Accelerons</a></li>
-					<li><a href="/nitrox">Team Nitrox</a></li>
-				</ul>
-			</div>
-			<div class="block second col-lg-3 col-6">
-				<ul>
-					<li><h2 style="font-size: 26px;">Explore</h2></li>
-					<li style="color: #000;">t</li>
-					<li><a href="/gallery">Gallery</a></li>
-					<li><a href="/sponsors">Sponsors</a></li>
-					<li><a href="/discuss">Discuss</a></li>
-					<li><a href="/blogs">Articles</a></li>
-					<li><a href="/hall_of_fame">Hall of Fame</a></li>
-					<li><a href="/support">Support Us</a></li>
-					
-				</ul>
-			</div>
-			<div class="block third col-lg-3 col-6">
-			<dl>
-					<dt><h2 style="font-size: 26px;">Our Leaders</h2></dt>
-					<dd style="color: #000;">t</dd>
-					<dt class="change">President</dt>
-					<dd>&nbsp;&nbsp;<a href="https://www.linkedin.com/in/keshav-vats-07b624167" target="_blank">Keshav Vats  <i class="fa fa-linkedin-square" aria-hidden="true"></i></a></dd>
-				
-					<dt class="change"></dt>Vice President</dt>
-					<dd>&nbsp;&nbsp;<a href="www.linkedin.com/in/ritik-goyal-bab617165/" target="_blank"> Ritik Goyal <i class="fa fa-linkedin-square" aria-hidden="true"></i></a></dd>
-					
-					<dt class="change">Marketing Chairperson</dt>
-					<dd>&nbsp;&nbsp;<a href="https://www.linkedin.com/in/pavitra-jain-57b715165" target="_blank">Pavitra Jain  <i class="fa fa-linkedin-square" aria-hidden="true"></i></a></dd>
-				</dl>
-			</div>
-			<div class="block forth col-lg-3 col-6">
-				<ul>
-					<li><h2 style="font-size: 26px;">Contact Us</h2></li>
-					<li style="color: #000;">t</li>
-					<li><i class="fa fa-phone" aria-hidden="true"></i> +91 7999991375</li>
-					<li><a href="mailto:smthng@gmail.com   " target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i> &nbsp;saenitkurukshetra@gmail.com</a></li>
-					<li style="color: #000;">t</li>
-					<li><i class="fa fa-phone" aria-hidden="true"></i> +91 8053225178</li>
-					<li><a href="https://mail.google.com/mail/u/0/?tab=km1#inbox?compose=new" target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i> &nbsp;acceleronsnitkkr@gmail.com</a></li>
-					<li style="color: #000;">t</li>
-					<li><i class="fa fa-phone" aria-hidden="true"></i> +91 7082640201</li>
-					<li><a href="https://mail.google.com/mail/u/0/?tab=km1#inbox?compose=new" target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i> &nbsp;nitroxkkr@gmail.com</a></li>
-				</ul>
+	
+    <!--Footer-->	
+	<div class="pre-footer">
+		<hr style="width: 100%; color: #fff; background-color: #fff;">
+	</div>
 
+	<div class="footer">
+		<div class="footercolmain">
+			<div class="col1">
+				<div class="col1 trinity content">
+					<ul>
+						<li id = "footerheading"><h2 style="font-size: 26px;">The Trinity</h2></li>
+						<li style="color: #000;"> t</li>
+						<li><a href="/events/autokriti">Autokriti</a></li>
+						<li><a href="/accelerons">Team Accelerons</a></li>
+						<li><a href="/nitrox">Team Nitrox</a></li>
+					</ul>
+				</div>
+
+				<div class="col2 explore content">
+					<ul>
+						<li id = "footerheading"><h2 style="font-size: 26px;">Explore</h2></li>
+						<li style="color: #000;">t</li>
+						<li><a href="/gallery">Gallery</a></li>
+						<li><a href="/sponsors">Sponsors</a></li>
+						<li><a href="/discuss">Discuss</a></li>
+						<li><a href="/blogs">Articles</a></li>
+						<li><a href="/hall_of_fame">Hall of Fame</a></li>
+						<li><a href="/support">Support Us</a></li>
+					</ul>
+				</div>	
+			</div>
+
+			<div class="col2">
+				<div class="col2 leaders content">
+					<dl>
+						<dt id = "footerheading"><h2 style="font-size: 26px;">Our Leaders</h2></dt>
+						<dd style="color: #000;">t</dd>
+						<dt class="change">President</dt>
+						<dd>&nbsp;&nbsp;<a href="https://www.linkedin.com/in/keshav-vats-07b624167" target="_blank">Keshav Vats  <i class="fa fa-linkedin-square" aria-hidden="true"></i></a></dd>
+					
+						<dt class="change"></dt>Vice President</dt>
+						<dd>&nbsp;&nbsp;<a href="www.linkedin.com/in/ritik-goyal-bab617165/" target="_blank"> Ritik Goyal <i class="fa fa-linkedin-square" aria-hidden="true"></i></a></dd>
+						
+						<dt class="change">Marketing Chairperson</dt>
+						<dd>&nbsp;&nbsp;<a href="https://www.linkedin.com/in/pavitra-jain-57b715165" target="_blank">Pavitra Jain  <i class="fa fa-linkedin-square" aria-hidden="true"></i></a></dd>
+					</dl>
+				</div>
+				<div class="col2 footercontact content">
+					<ul>
+						<li id = "footerheading"><h2 style="font-size: 26px;">Contact Us</h2></li>
+						<li style="color: #000;">t</li>
+						<li><i class="fa fa-phone" aria-hidden="true"></i> +91 7999991375</li>
+						<li><a href="mailto:smthng@gmail.com   " target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i> &nbsp;saenitkurukshetra@gmail.com</a></li>
+						<li style="color: #000;">t</li>
+						<li><i class="fa fa-phone" aria-hidden="true"></i> +91 8053225178</li>
+						<li><a href="https://mail.google.com/mail/u/0/?tab=km1#inbox?compose=new" target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i> &nbsp;acceleronsnitkkr@gmail.com</a></li>
+						<li style="color: #000;">t</li>
+						<li><i class="fa fa-phone" aria-hidden="true"></i> +91 7082640201</li>
+						<li><a href="https://mail.google.com/mail/u/0/?tab=km1#inbox?compose=new" target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i> &nbsp;nitroxkkr@gmail.com</a></li>
+					</ul>
+				</div>
 			</div>
 		</div>
 	</div>
-    <div class="bottom">
-        <div class="copyright">
-                <i class="fa fa-copyright" aria-hidden="true" style="padding-top: 0.7%;"></i>&nbsp; 2020 SAE National Institute of Technology, Kurukshetra    
-        </div>
-            
-        <div class="creators">
-                Designers & Developers : &nbsp;&nbsp;&nbsp;<span id="color">Amit Rawat&nbsp;</span> & <span id="color">&nbsp;Arnav Goel </span>
-        </div>
-    </div>
-    <!--
-    <div class="post-footer">
-        <center>
-        <div class="social-media">
-            <a class="btn button_social" href="">
-                <i class="fa fa-facebook-f"></i>
-            </a>
-            <a class="btn button_social" href="">
-                <i class="fa fa-instagram"></i>
-            </a>
-            <a class="btn button_social" href="">
-                <i class="fa fa-twitter"></i>
-            </a>
-            <a class="btn button_social" href="">
-                <i class="fa fa-youtube"></i>
-            </a>
-        </div>  
-        </center>  
-    </div>
--->
+
+	<div class="post-footer">
+		<center>
+			<div class="copyright"><i class="fa fa-copyright" aria-hidden="true" style="padding-top: 0.7%;"></i>  2020 SAE National Institute of Technology, Kurukshetra    
+	        </div>
+			<div class="developers">
+				<ul>Designers and Developers:
+					<li>Arnav Goel</li>
+					<li>Amit Rawat</li>
+					<li>Yogita Sangwan</li>
+				</ul>
+			</div>
+		</center>
+	</div>
+
 	<script type="text/javascript">
 		const $dropdown = $(".dropdown");
 		const $dropdownToggle = $(".dropdown-toggle");
