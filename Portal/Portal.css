@@ -1,0 +1,818 @@
+
+@import url('https://fonts.googleapis.com/css2?family=BioRhyme&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Vollkorn:ital,wght@0,500;0,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rakkas&display=swap');
+
+body {
+    font-family: "Lato", sans-serif;
+    margin: 0px;
+    background-color: #3e1e5d;
+}
+
+.sidebar {
+    height: 300px;
+    width: 0px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #125d4f;
+    overflow-x: hidden;
+    transition: 0.5s;
+    border-radius: 0px 0px 0px 900px;
+    padding-top: 60px;
+}
+
+.sidebar a {
+    padding: 0px 10px 8px 92px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #f4f7f4c7;
+    display: block;
+    transition: 0.3s;
+}
+
+    .sidebar a:hover {
+        color: #f1f1f1;
+    }
+
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    float: right;
+}
+
+.openbtn:hover {
+    background-color: #444;
+}
+
+#main {
+    transition: margin-left .5s;
+    width: 100%;
+    height:80vh;
+    margin-top: -2%;
+    overflow-x:hidden;
+    overflow-y:hidden;
+    background-image:url('poster.jpg');
+    background-position: center;
+    background-size: contain;
+    background-repeat:no-repeat;
+    top: 0;
+    left: 0;
+    -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+/*#navbar {
+    overflow: hidden;
+    background-color: #3e1e5d;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    display: block;
+}
+*/
+#logo {
+    float: left;
+    text-decoration: none;
+    color: #d9edf7;
+    font-size: 20px;
+}
+/*
+#webinar_poster {
+    display:inline;
+    width: 100%;
+    opacity: 1;   
+     margin-top:1%;
+}
+*/
+#clockdiv {
+    font-family: 'Rakkas', cursive;
+    color: #fff;
+    display: inline-block;
+    font-weight: 100;
+    text-align: center;
+    font-size: 30px;
+    margin-left: 35%;
+    margin-bottom: 2%;
+    overflow-x:hidden;
+    overflow-y:hidden;
+}
+
+#clockdiv > div {
+    padding: 10px;
+    border-radius: 3px;
+    background: #030f1b;
+    display: inline-block;
+}
+
+#clockdiv div > span {
+    padding: 15px;
+    border-radius: 3px;
+    background: #04335f;
+    
+    display: inline-block;
+}
+
+.smalltext {
+    padding-top: 5px;
+    font-size: 16px;
+}
+
+.heading{
+    background-color: #021c35;
+    /*box-shadow: #04045d 2px 2px 20px 0px;*/
+    margin-left: 10%;
+    /*margin-top: 5%;*/
+    overflow-x:hidden;
+    overflow-y:hidden;
+    width: 80%;
+    align-content: center;
+    background-attachment: fixed;
+    font-family: 'Vollkorn', serif;
+    color: #fff;
+    border-bottom: solid red 1px;
+    margin-bottom: 1em;
+    margin-top: 2em;
+    padding-left: 1em;
+}
+
+.heading h1{
+    font-size: 4em;
+}
+
+.prerequisites {
+    background-color: #021c35;
+    // box-shadow: #04045d 2px 2px 20px 0px;
+    margin-left: 10%;
+    //margin-top: 5%;
+    overflow-x:hidden;
+    overflow-y:hidden;
+    width: 80%;
+    align-content: center;
+    background-attachment: fixed;
+    font-family: 'Vollkorn', serif;
+   
+}
+/*
+.prerequisites {
+    box-shadow: midnightblue 2px 2px 1px 12px inset;
+    margin-left: 10%;
+    margin-top: 5%;
+    width: 80%;
+    align-content: center;
+    background-attachment:fixed;
+    
+    
+}
+   */
+
+.Horizontal_Row1 {
+    width: 40%;
+    height: 3px;
+    display:inline-block;
+   // margin-left: 40%;
+    margin-bottom:0%;
+    background-color: white;
+}
+.Horizontal_Row2 {
+    width: 40%;
+    height: 3px;
+    margin-left: 60%;
+    background-color: white;
+}
+
+#prereq_left {
+    text-align-last: center;
+    //border:5px solid red;
+    width: 40%;
+    margin-top: 5%;
+
+       
+}
+
+.why_to_join {
+    width: 20%;
+    height: auto;
+    border-radius: 50%;
+    border-collapse: collapse;
+  
+    display: inline-block;
+    background-color: aquamarine;
+}
+/*
+// animation 
+    .slide {
+    position:absolute;
+    width: 20%;
+    height: auto;
+    left:-20%;
+    border-radius: 50%;
+    border-collapse: collapse;
+    background: url("images/learning.png");
+    background-size: cover;
+    display: inline-block;
+    background-color: aquamarine;
+    position: relative;
+    animation:slide 2s forwards;
+    animation-delay: 0.2s;
+}
+#slide1 {
+    position: absolute;
+   
+    left: -20%;
+   
+    position: relative;
+    animation: slide 2s forwards;
+    animation-delay: 0.2s;
+}
+@keyframes slide1 {
+    0% {
+        left: -200%;
+    }
+
+    100% {
+        left: 1%;
+    }
+}
+@keyframes slide {
+    0% {
+        left: -200%;
+    }
+
+    100% {
+        left: 1%;
+    }
+}
+
+*/
+.heading1 {
+    color: white;
+    //font-family: 'BioRhyme','Times New Roman', Times, serif;
+   
+    font-family: 'Rakkas', cursive;
+    text-align:center;
+}
+
+#prereq_left .heading1 {
+    display: block;
+    margin-top: -1%;
+    //position: relative;
+    //animation: slide 2s forwards;
+    //animation-delay: 5s;
+   
+}
+
+#prereq_right p {
+    font-size: large;
+    font-family: 'BioRhyme','Times New Roman', Times, serif;
+    color: #00BCD4;
+    text-align: center;
+}
+
+#prereq_right  h2 {
+    color: white;
+    text-align: center;
+   
+    font-family: 'BioRhyme','Times New Roman', Times, serif;
+}
+
+ul li{
+    list-style-type:none;
+}
+#prereq_right{
+    display:inline;
+    float:right;
+   // border:5px solid red;
+    width:60%;
+     
+     padding-top:5%;
+
+}
+ #prereq_right ul {
+ color: white;
+ font-size: medium;
+font-family: 'BioRhyme','Times New Roman', Times, serif;
+text-align:left;
+}
+
+
+
+.tick li::before {
+    content: '\2713';
+    margin-left:-19px;
+    font-weight:bold;
+    font-size:large;
+    color:green;
+}
+
+.prereq_wrap {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 10%;
+    margin-top: 1%;
+    align-content: center;
+}
+
+.image_clipart{
+    width:90%;
+    height:90%;
+    display:block;
+}
+
+
+
+.advantages {
+    background-color:greenyellow;
+    width: auto;
+    height: auto;
+    box-shadow: whitesmoke 1px 1px 10px 1px;
+    position: center;
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
+    display:flex;
+}
+
+.advantages_outerdiv {
+    width: 80%;
+    height: auto;
+    border-right:5px groove;
+    border-left:5px groove;
+    box-shadow:#034b6f 1px 5px 15px 3px ;
+    border-radius: 10px;
+    margin-left: 10%;
+    margin-top: 5%;
+}
+
+
+
+
+@import url("https://fonts.googleapis.com/css?family=Nunito&display=swap");
+
+img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.socialMedia {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    display: inline-block;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+  
+    transition: all 1s ease;
+}
+.socialMedia:hover {
+        box-shadow: 0 0 2em #00BCD4;
+        color: #FFFFFF;
+        border-color: #FFFFFF;
+        width:70px;
+        height:70px;
+    }
+.Learnings{
+    width:15%;
+    height:15%;
+    border-radius:25%;
+    margin:5%;
+    display:inline-block;
+
+}
+.footer_wrap {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    
+    margin-top: 1%;
+    align-content: center;
+}
+#footer_left {
+   text-align:center;
+    //border:5px solid red;
+    width: 50%;
+  }
+#footer_left ul li{
+    display:inline;
+}
+#footer_right ul li{
+    display:inline;
+}
+#footer_right {
+    display: inline;
+    float: right;
+    // border:5px solid red;
+    width: 50%;
+   
+    text-align:center;
+}
+
+.whatsapp {
+
+    width: 70px;
+    height: 70px;
+    position:fixed;
+    top:80%;
+}
+.whatsapp img{
+    width:70px;
+    height:70px;
+    border-radius:70px;
+    border:groove grey;
+}
+
+
+.pay_button {
+    /* position: sticky; */
+    /* top: 0px; */
+    /* z-index: 1; */
+    /* float: right; */
+    //:;
+    left: 0px;
+    /* background-color: #031b17f0; */
+    padding: 1% 45%;
+ overflow-x:hidden;
+ overflow-y:hidden;
+   
+}    
+.pay_button:hover {
+    box-shadow: 0 0 2em #00BCD4;
+    color: #FFFFFF;
+    border-color: #FFFFFF;
+    padding:3% 45%;
+}
+
+.pay_certi {
+    color: white;  font-family: 'BioRhyme','Times New Roman', Times, serif;
+    text-align:center;
+}
+.pay_button1{
+    box-shadow: 0 0 2em #00BCD4;
+    color: #FFFFFF;
+    border-color: #FFFFFF;
+    margin-top:4%;
+    margin-bottom:4%;
+    text-align:center;
+    
+}
+
+#pm-button {
+    display: block;
+    padding: 1em 1.4em;
+    /* margin: 0em 0em 0em 0; */
+    border-radius: 4em;
+    box-sizing: border-box;
+    text-decoration: underline;
+    font-family: 'Roboto',sans-serif;
+    // text-transform: uppercase;
+    /* font-weight: bolder; */
+    color: #ffffff;
+    background-color: #008000;
+    /* box-shadow: inset 0px 0.5em 16px 0em #f7f9fa; */
+    text-align: center;
+    font-family: system-ui;
+    font-size: large;
+    position: relative;
+    transition: all 0.15s;
+    border-top: 10px double;
+    /* border-style: dotted; */
+    background-color: #04335f;
+}
+#pm-button:hover {
+    text-shadow: 0 0 2em rgba(255,255,255,1);
+    color: #FFFFFF;
+    border-color: #FFFFFF;
+}
+/*      Footer  CSS      */
+
+.footer {
+    background: #000;
+    overflow-x:hidden;
+    overflow-y:hidden;
+    width: 100%;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    color: #fff;
+    padding: 2%;
+    margin-top: 2%;
+}
+
+.top {
+    padding: 10px 0;
+}
+
+
+
+.bottom {
+    margin-left: 2%;
+}
+
+.creators {
+    margin-left:     0%;
+    
+}
+
+@media all and (max-width:30em) {
+     #pm-button {
+        display: block;
+        margin: 0.4em auto;
+    }
+}
+
+
+
+@media (max-width:1024px){
+    #main{
+        height:50vh;
+    }
+}
+
+@media (max-width:900px){
+    #main{
+        height:50vh;
+    }
+   
+}
+
+@media (max-width: 800px){
+    #prereq_left {
+        /* display: block; */
+        width: 100%;
+    }
+    #prereq_right {
+        /* display: block; */
+        width: 100%;
+    }
+    #main{
+        height:40vh;
+    }
+    #clockdiv{
+        margin-left:30%;
+
+    }
+    .image_clipart {
+     width:50%;
+     margin-left:25%;
+    }
+   
+   #prereq_left .heading1{
+       display:inline-block;
+   }
+    .pay_button {
+        padding: 2% 35%;
+    }
+
+        .pay_button:hover {
+            padding: 2% 30%;
+        }
+}
+@media (max-width:800px) and (max-height:1024px) {
+    #main {
+        height: 30vh;
+    }
+    .creators{
+        margin-left:0%;
+    }
+}
+/*
+@media (max-width:800px) and (max-height:500px) {
+    #main {
+        height: 70vh;
+    }
+}
+@media (max-width:800px) and (max-height:400px) {
+    #main {
+        height: 80vh;
+    }
+}
+@media (max-width:800px) and (max-height:300px) {
+    #main {
+        height: 100vh;
+    }
+}*/
+@media (max-width:700px) {
+    #main {
+        height:40vh;
+    }
+    .creators{
+        margin-left:4%;
+    }
+    #footer_left{
+        width:40%;
+    }
+    #footer_right{
+        width:60%;
+    }
+    .pay_button {
+        padding: 2% 30%;
+    }
+
+        .pay_button:hover {
+            padding: 2% 30%;
+        }
+}
+/**@media (max-width:700px) and (max-height:500px) {
+    #main {
+        height: 60vh;
+    }
+}
+
+@media (max-width:700px) and (max-height:300px) {
+    #main {
+        height: 100vh;
+    }
+}*/
+@media (max-width:600px) {
+    #main {
+        height: 30vh;
+    }
+    #prereq_left .heading1 {
+        font-size:30px;
+    }
+    #clockdiv {
+        margin-left: 20%;
+    }
+    #footer_left{
+        display:block;
+            width:100%;
+
+    }
+    #footer_right {
+        display: block;
+        width: 100%;
+    }
+    .creators{
+        margin-left:1%;
+    }
+}
+
+/*@media (max-width:600px) and (max-height:600px) {
+    #main {
+        height: 50vh;
+    }
+}*/
+@media (max-width:500px){
+    #clockdiv {
+        margin-left: 10%;
+    }
+   
+    .creators{
+        font-size:small;
+    }
+   .why_to_join{
+      
+       align-content:center;
+    }
+    #prereq_left .heading1 {
+        display: block;
+    }
+    #prereq_right h2{
+        font-size:x-large;
+    }
+    .pay_button{
+        padding:2% 20%;
+    }
+    .pay_button:hover {
+        padding: 2% 20%;
+    }
+}
+@media (max-width:400px) {
+    #clockdiv {
+        margin-left: 5%;
+    }
+    #main{
+        height:20vh;
+    }
+    #copyright{
+        font-size:small;
+    }
+    .whatsapp {
+        width: 60px;
+        height: 60px;
+        top: 70%;
+    }
+
+        .whatsapp img {
+            width: 60px;
+            height: 60px;
+            border-radius: 60px;
+            
+        }
+
+}
+@media (max-width:380px) {
+    #clockdiv {
+        margin-left: 8%;
+        font-size:20px;
+    }
+    .pay_button{
+        padding:3% 30%;
+    }
+        .pay_button:hover {
+            padding: 2% 30%;
+        }
+    .prerequisites{
+        width:100%;
+        margin-left:0%;
+    }
+    #footer_left{
+        display:block;
+    }
+    
+}
+
+@media (max-width:320px){
+    #clockdiv {
+        margin-left: 5%;
+        font-size: 20px;
+    }
+    .pay_button {
+        padding: 3% 25%;
+    }
+        .pay_button:hover {
+            padding: 2% 30%;
+        }
+    #footer_right{
+        font-size:smaller;
+    }
+}
+@media (max-width:280px) {
+    #clockdiv {
+        margin-left: 0%;
+        font-size: 15px;
+    }
+    .smalltext {
+       
+        font-size: 10px;
+    }
+    #prereq_left .heading1 {
+        font-size: 20px;
+    }
+    .prerequisites {
+        margin-left:0px;
+        width:100%;
+    }
+    #prereq_right {
+        margin-left: 0px;
+        width: 100%;
+    }
+   
+
+}
+
+
+
+
+    /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+    @media screen and (max-height: 450px) {
+        .sidebar {
+        padding-top: 15px;
+    }
+
+        .sidebar a {
+            font-size: 18px;
+        }
+}
+
+/**@media (min-width:1024px) and (max-height:1024px){
+    #main {
+        height: 40vh;
+    }
+}
+@media (min-width:1024px) and (max-height:800px) {
+    #main {
+        height: 60vh;
+    }
+}
+@media (min-width:1024px) and (max-height:600px) {
+    #main {
+        height: 80vh;
+    }
+}
+@media (min-width:1024px) and (max-height:400px) {
+    #main {
+        height: 100vh;
+    }
+}*/
+

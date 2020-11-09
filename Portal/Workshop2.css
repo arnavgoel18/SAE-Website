@@ -1,0 +1,129 @@
+body{
+    background-color: #000;
+}
+
+.main{
+    width: 100%;
+    height: 100vh;
+    background-color: ;
+    box-sizing: border-box;
+    border-radius: 40px ;  
+}
+
+.container{
+    background-color: #fff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid #fff;
+    padding: 10px;
+    width: 90%;
+    height: 90%;
+    border-radius: 40px;
+    padding: 1em;
+}
+
+.col1{
+   width: 100%;
+   height: 100%;
+   /*border: solid #000 1px;*/
+   border-radius: 40px;
+   display: flex;
+}
+
+.poster{
+    width: 50%;
+    height: 100%;
+    border: solid #000 1px;
+    border-radius: 40px;
+    background: url('poster.jpg');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.col1-in{
+    width: 50%;
+    height: 100%;
+    /*border: solid 1px #000;*/
+    border-radius: 40px;
+    margin-left: 1em;
+}
+
+.pre-heading{
+    width: 98%;
+    height: 8%;
+    padding: 0 0.5em;
+}
+
+.heading{
+    width: 98%;
+    height: 22%;
+    border: solid #000 1px;
+    border-radius: 40px;
+    padding: 0em 0.5em;
+}
+
+.pre-heading h1{
+    border-bottom: solid red 2px;
+}
+
+.heading ul{
+    list-style: none;
+}
+
+.heading ul li{
+    font-size: 17px;
+}
+
+.learnings{
+    width: 98%;
+    height: 28%;
+    border: solid #000 1px;
+    border-radius: 40px;
+    margin-top: 1em ;
+    padding: 0em 0.5em;
+}
+
+.learnings ul{
+    list-style: none;
+}
+
+.learnings ul li{
+    font-size: 17px;
+}
+
+.prerequisits{
+    width: 98%;
+    height: 20%;
+    border: solid #000 1px;
+    border-radius: 40px;
+    margin-top: 1em ;
+    padding: 0em 0.5em;
+
+}
+
+.register{
+    margin-top: 1em ;
+    padding: 0em 0.3em;
+}
+
+.register button{
+    background: #000;
+    color: #fff;
+    height: 3em;
+    width: 20em;
+    font-size: 1.1em;
+}
+
+@media screen and (max-width:800px){
+    .col1{
+        flex-direction: column;
+    }
+    .poster{
+        
+    }
+   
+
+}
